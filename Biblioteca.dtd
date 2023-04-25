@@ -1,0 +1,63 @@
+<!-- Definimos los elementos de la biblioteca -->
+<!ELEMENT Biblioteca (Libros,Revistas,Periodicos)>
+
+<!-- Definimos los elementos de Libros -->
+<!ELEMENT Libros (Libro+)>
+<!ELEMENT Libro (Titulo_libro,Capitulo+)>
+<!ELEMENT Titulo_libro (#PCDATA)>
+<!ELEMENT Capitulo (Titulo_cap,Indice_libro,Sinopsis,Contenido_libro)>
+
+<!ELEMENT Titulo_cap (#PCDATA)>
+<!ELEMENT Indice_libro (#PCDATA)>
+<!ELEMENT Sinopsis (#PCDATA)>
+<!ELEMENT Contenido_libro (Informacion_libro)>
+<!ELEMENT Informacion_libro (#PCDATA)>
+
+<!-- Definimos los atributos de Libros -->
+<!ATTLIST Libro Id ID #REQUIRED>  <!-- Tiene que empezar siempre por L seguido de 4 digitos -->
+<!ATTLIST Libro tipo_clase_libro (novela | infantil | didáctico) #REQUIRED>
+<!ATTLIST Libro numero_paginas_libro CDATA #REQUIRED>
+
+<!ATTLIST Capitulo numero_paginas_cap CDATA #REQUIRED>
+<!ATTLIST Contenido_libro enlace_cap CDATA #REQUIRED>
+
+
+<!-- Definimos los elementos de Revistas -->
+<!ELEMENT Revistas (Revista+)>
+<!ELEMENT Revista (Titulo_revista,Numero_de_revista,Indice_contenido,Secciones_revista)>
+<!ELEMENT Titulo_revista (#PCDATA)>
+<!ELEMENT Numero_de_revista (#PCDATA)>
+<!ELEMENT Indice_contenido (#PCDATA)>
+
+<!ELEMENT Secciones_revista (Seccion_revista+)>
+<!ELEMENT Seccion_revista (Contenido_revista)>
+<!ELEMENT Contenido_revista (Informacion_revista)>
+<!ELEMENT Informacion_revista (#PCDATA)>
+
+
+<!-- Definimos los atributos de Revistas -->
+<!ATTLIST Revista Id ID #REQUIRED>  <!-- Tiene que empezar siempre por R seguido de 4 digitos -->
+<!ATTLIST Revista tipo_clase (informática | corazón | coches | investigación | otras) #REQUIRED>
+<!ATTLIST Revista numero_paginas_revista CDATA #REQUIRED>
+<!ATTLIST Seccion_revista sec CDATA #IMPLIED>
+<!ATTLIST Seccion_revista numero_paginas_seccion CDATA #REQUIRED>
+<!ATTLIST Contenido_revista enlace_revista CDATA #REQUIRED>
+
+
+<!-- Definimos los elementos de Periodicos -->
+<!ELEMENT Periodicos (Periodico+)>
+<!ELEMENT Periodico (Secciones_periodico,Indice_periodico)>
+<!ELEMENT Indice_periodico (#PCDATA)>
+<!ELEMENT Secciones_periodico (Seccion_periodico+)>
+<!ELEMENT Seccion_periodico (Articulos*, Contenido_periodico)>
+<!ELEMENT Articulos (#PCDATA)>
+<!ELEMENT Contenido_periodico (Informacion_periodico)>
+<!ELEMENT Informacion_periodico (#PCDATA)>
+
+<!-- Definimos los atributos de Periodicos -->
+<!ATTLIST Periodico Id ID #REQUIRED> <!-- Tiene que empezar siempre por P seguido de 4 digitos -->
+<!ATTLIST Periodico tipo_clase_periodico (nacional | internacional) #REQUIRED>
+<!ATTLIST Periodico fecha_publicacion CDATA #REQUIRED>
+<!ATTLIST Seccion_periodico tipo_seccion (económica | opinión | deportes | nacional | internacional) #REQUIRED>
+<!ATTLIST Articulos autor CDATA #REQUIRED>
+<!ATTLIST Contenido_periodico enlace_periodico CDATA #REQUIRED>

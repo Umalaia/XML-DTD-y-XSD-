@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Biblioteca SYSTEM "Biblioteca.dtd">
+
+<Biblioteca>
+    <Libros>
+        <Libro Id="L0001" tipo_clase_libro="novela" numero_paginas_libro="400">
+            <Titulo_libro> La chica del tren </Titulo_libro>
+            <Capitulo numero_paginas_cap="100">
+                <Titulo_cap> Capitulo Inicial </Titulo_cap>
+                <Indice_libro> La llegada .....2</Indice_libro>
+                <Sinopsis> Rachel toma siempre el tren de las 8.04 h. Cada mañana lo mismo: el mismo
+                    paisaje, las mismas casas… y la misma parada en la señal roja. Son solo unos
+                    segundos, pero le permiten observar a una pareja desayunando tranquilamente en
+                    su terraza. </Sinopsis>
+                <Contenido_libro enlace_cap="www.Lachicadeltren/cap1.com">
+                    <Informacion_libro> Contenido del capitulo 1 </Informacion_libro>
+                </Contenido_libro>
+            </Capitulo>
+            <Capitulo numero_paginas_cap="298">
+                <Titulo_cap> Capitulo Final </Titulo_cap>
+                <Indice_libro> El encuentro .....102</Indice_libro>
+                <Sinopsis> Siente que los conoce y se inventa unos nombres para ellos: Jess y Jason.
+                    Su vida es perfecta, no como la suya. Pero un día ve algo. Sucede muy deprisa,
+                    pero es suficiente. ¿Y si Jess y Jason no son tan felices como ella cree? ¿Y si
+                    nada es lo que parece? Tú no la conoces. Ella a ti, sí. </Sinopsis>
+                <Contenido_libro enlace_cap="www.Lachicadeltren/cap2.com">
+                    <Informacion_libro> Contenido del capitulo 2 </Informacion_libro>
+                </Contenido_libro>
+            </Capitulo>
+        </Libro>
+        <Libro Id="L0002" tipo_clase_libro="didáctico" numero_paginas_libro="200">
+            <Titulo_libro> Els dimonis de pandora </Titulo_libro>
+            <Capitulo numero_paginas_cap="50">
+                <Titulo_cap> El comienzo </Titulo_cap>
+                <Indice_libro> Els dimonis .....2</Indice_libro>
+                <Sinopsis> Cuando llegue la noche deberás empezar a tener miedo, porque entonces las
+                    sombras ya no serán sólo sombras, y los demonios te pueden perseguir a través de
+                    la oscuridad. </Sinopsis>
+                <Contenido_libro enlace_cap="www.Lachicadeltren/cap1.com">
+                    <Informacion_libro> Contenido del capitulo 1 </Informacion_libro>
+                </Contenido_libro>
+            </Capitulo>
+            <Capitulo numero_paginas_cap="100">
+                <Titulo_cap> La investigación </Titulo_cap>
+                <Indice_libro> El enigma .....52</Indice_libro>
+                <Sinopsis> En distintos lugares del mundo se están produciendo extraños suicidios
+                    que parecen relacionados con el robo de una pieza arqueo-lógica cuyas
+                    inscripciones nunca han podido ser descifradas. </Sinopsis>
+                <Contenido_libro enlace_cap="www.Lachicadeltren/cap2.com">
+                    <Informacion_libro> Contenido del capitulo 2 </Informacion_libro>
+                </Contenido_libro>
+            </Capitulo>
+            <Capitulo numero_paginas_cap="48">
+                <Titulo_cap> Capitulo Final </Titulo_cap>
+                <Indice_libro> La caja de pandora .....152</Indice_libro>
+                <Sinopsis> Un misterio oculto desde el inicio de los tiempos ha permanecido dormido
+                    durante siglos… y ahora comienza la verdadera pesadilla. </Sinopsis>
+                <Contenido_libro enlace_cap="www.Lachicadeltren/cap2.com">
+                    <Informacion_libro> Contenido del capitulo 3 </Informacion_libro>
+                </Contenido_libro>
+            </Capitulo>
+        </Libro>
+    </Libros>
+
+    <Revistas>
+        <Revista Id="R0001" tipo_clase="corazón" numero_paginas_revista="40">
+            <Titulo_revista> Hearts </Titulo_revista>
+            <Numero_de_revista> 1 </Numero_de_revista>
+            <Indice_contenido> Portada ....1 Famosos ....2 Cotilleo ....16 Curiosidades ....36 </Indice_contenido>
+            <Secciones_revista>
+                <Seccion_revista sec="famosos" numero_paginas_seccion="15">
+                    <Contenido_revista enlace_revista="www.hearts/famosos.com">
+                        <Informacion_revista> El famoseo </Informacion_revista>
+                    </Contenido_revista>
+                </Seccion_revista>
+                <Seccion_revista sec="cotilleo" numero_paginas_seccion="20">
+                    <Contenido_revista enlace_revista="www.hearts/cotilleo.com">
+                        <Informacion_revista> La vida del cotilla </Informacion_revista>
+                    </Contenido_revista>
+                </Seccion_revista>
+                <Seccion_revista sec="curiosidades" numero_paginas_seccion="4">
+                    <Contenido_revista enlace_revista="www.hearts/curiosidades.com">
+                        <Informacion_revista> Novedades del corazón </Informacion_revista>
+                    </Contenido_revista>
+                </Seccion_revista>
+            </Secciones_revista>
+        </Revista>
+    </Revistas>
+
+    <Periodicos>
+        <Periodico Id="P0001" tipo_clase_periodico="nacional" fecha_publicacion="01/01/2023">
+            <Secciones_periodico>
+                <Seccion_periodico tipo_seccion="nacional">
+                    <Articulos autor="Sheila Orejuela"> El parte de la semana </Articulos>
+                    <Contenido_periodico enlace_periodico="www.nacional/informacion.com">
+                        <Informacion_periodico> Informacion nacional de la semana </Informacion_periodico>
+                    </Contenido_periodico>
+                </Seccion_periodico>
+                <Seccion_periodico tipo_seccion="opinión">
+                    <Articulos autor="Sheila Orejuela"> Opiniones </Articulos>
+                    <Contenido_periodico enlace_periodico="www.nacional/opinion.com">
+                        <Informacion_periodico> Opiniones semanales </Informacion_periodico>
+                    </Contenido_periodico>
+                </Seccion_periodico>
+            </Secciones_periodico>
+            <Indice_periodico> Interes general ...1 Comunidades autonomas ...5 Panorama nacional
+                ....30 El tiempo ....50 </Indice_periodico>
+        </Periodico>
+    </Periodicos>
+</Biblioteca>
