@@ -5,7 +5,7 @@
     <Libros>
         <Libro Id="L1234" tipo_clase_libro="novela" numero_paginas_libro="100">
             <Titulo_libro>El mar</Titulo_libro>
-            <Capitulo numero_paginas_cap="99">
+            <Capitulo numero_paginas_cap="50">
                 <Titulo_cap>El acantilado</Titulo_cap>
                 <Indice_libro> La marea .....2 </Indice_libro>
                 <Sinopsis>A medida que avanza su evocación se desvelará el trágico suceso que
@@ -14,6 +14,38 @@
                     <Informacion_libro> Informacion capitulo 1</Informacion_libro>
                 </Contenido_libro>
             </Capitulo>
+            <Capitulo numero_paginas_cap="49">
+                <Titulo_cap> El remordimiento </Titulo_cap>
+                <Indice_libro> El momento .... 50</Indice_libro>
+                <Sinopsis>Max busca un improbable cobijo del presente, demasiado doloroso, en el
+                    recuerdo de un momento muy concreto de su infancia: el verano de su iniciación a
+                    la vida y sus placeres, del descubrimiento de la amistad y el amor; pero
+                    también, finalmente, del dolor y la muerte</Sinopsis>
+                <Contenido_libro enlace_cap="www.elmar/cap2.com">
+                    <Informacion_libro> Información capitulo 2</Informacion_libro>
+                </Contenido_libro>
+            </Capitulo>
         </Libro>
     </Libros>
+
+    <Revistas Id="R0251" tipo_clase="informática" Numero_paginas_revista="40">
+        <Titulo_revista>ChatGPT</Titulo_revista>
+        <Numero_de_revista>10</Numero_de_revista>
+        <Indice_contenido> La revolución de ChatGPT ..... 2
+         TOP 10 Pc's</Indice_contenido>
+        <Secciones_revista>
+            <Sección_revista Número_páginas_sección="20">
+                <Contenido_revista enlace_revista="Www.Informaticate/seccion1.com">
+                    <Información_revista>La actualidad de la información</Información_revista>
+                </Contenido_revista>
+            </Sección_revista>
+            <Sección_revista Número_páginas_sección="20">
+                <Contenido_revista enlace_revista="Www.Informaticate/seccion1.com">
+                    <Información_revista> Ranking de Pc's</Información_revista>
+                </Contenido_revista>
+            </Sección_revista>
+        </Secciones_revista>
+    </Revistas>
+
+
 </Biblioteca_02>

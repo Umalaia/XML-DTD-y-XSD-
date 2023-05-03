@@ -15,7 +15,7 @@
                                     <sequence>
                                         <element name="Titulo_libro" type="string" minOccurs="1"
                                             maxOccurs="1"></element>
-                                        <element name="Capitulo">
+                                        <element name="Capitulo" minOccurs="1" maxOccurs="unbounded">
                                             <complexType>
                                                 <sequence>
                                                     <element name="Titulo_cap" type="string"
@@ -28,9 +28,9 @@
                                                             <restriction base="string">
                                                                 <!-- La sinopsis debe de tener una
                                                                 longitud entre
-                                                    20 y 300 caracteres -->
+                                                    20 y 500 caracteres -->
                                                                 <minLength value="20" />
-                                                                <maxLength value="300" />
+                                                                <maxLength value="500" />
                                                             </restriction>
                                                         </simpleType>
                                                     </element>
@@ -40,7 +40,8 @@
                                                                 <element name="Informacion_libro"
                                                                     type="string"></element>
                                                             </sequence>
-                                                            <attribute name="enlace_cap">
+                                                            <attribute name="enlace_cap"
+                                                                use="required">
                                                                 <simpleType>
                                                                     <restriction base="string">
                                                                         <!-- Tiene que empezar por
@@ -71,7 +72,7 @@
                                             <restriction base="string">
                                                 <!-- Tiene que empezar siempre por L seguido de 4
                                                 digitos -->
-                                                <pattern value="L[1-9]{4}"></pattern>
+                                                <pattern value="L[0-9]{4}"></pattern>
                                             </restriction>
                                         </simpleType>
                                     </attribute>
@@ -99,6 +100,96 @@
                                 </complexType>
                             </element>
                         </sequence>
+                    </complexType>
+                </element>
+
+                <element name="Revistas">
+                    <complexType>
+                        <sequence>
+                            <element name="Titulo_revista" type="string" minOccurs="1"
+                                maxOccurs="1"></element>
+                            <element name="Numero_de_revista">
+                                <simpleType>
+                                    <restriction base="integer">
+                                        <!-- Tiene que ser un numero comprendido entre el 1 y el
+                                        999999 -->
+                                        <minInclusive value="1"></minInclusive>
+                                        <maxInclusive value="999999"></maxInclusive>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            <element name="Indice_contenido" type="string"></element>
+                            <element name="Secciones_revista">
+                                <complexType>
+                                    <sequence>
+                                        <element name="Sección_revista" minOccurs="1" maxOccurs="unbounded">
+                                            <complexType>
+                                                <sequence>
+                                                    <element name="Contenido_revista">
+                                                        <complexType>
+                                                            <sequence>
+                                                                <element name="Información_revista"></element>
+                                                            </sequence>
+                                                            <attribute name="enlace_revista" use="required">
+                                                                <simpleType>
+                                                                    <restriction base="string">
+                                                                    <!-- Tiene que empezar por
+                                                                        www/WWW/Www y seguir con un punto y luego letras-->
+                                                                        <pattern
+                                                                            value="[WWW,www,Www]+\..+[A-Za-z]+"></pattern>
+                                                                    </restriction>
+                                                                </simpleType>
+                                                            </attribute>
+                                                        </complexType>
+                                                    </element>
+                                                </sequence>
+                                                <attribute name="Número_páginas_sección" use="required">
+                                                    <simpleType>
+                                                        <restriction base="integer">
+                                                            <!-- Minimo de páginas permitido 2,
+                                                            máximo de 20 -->
+                                                            <minInclusive value="2"></minInclusive>
+                                                            <maxInclusive value="20"></maxInclusive>
+                                                        </restriction>
+                                                    </simpleType>
+                                                </attribute>
+                                            </complexType>
+                                        </element>
+                                    </sequence>
+                                </complexType>
+                            </element>
+                        </sequence>
+                        <attribute name="Id" use="required">
+                            <simpleType>
+                                <restriction base="string">
+                                    <!-- Tiene que empezar siempre por R seguido de 4
+                                                digitos -->
+                                    <pattern value="R[0-9]{4}"></pattern>
+                                </restriction>
+                            </simpleType>
+                        </attribute>
+                        <attribute name="tipo_clase" use="required">
+                            <simpleType>
+                                <restriction base="string">
+                                    <!-- Tiene que ser del tipo (informática, corazón, coches,
+                                    investigación u otras) -->
+                                    <enumeration value="informática"></enumeration>
+                                    <enumeration value="corazón"></enumeration>
+                                    <enumeration value="coches"></enumeration>
+                                    <enumeration value="investigación"></enumeration>
+                                    <enumeration value="otras"></enumeration>
+                                </restriction>
+                            </simpleType>
+                        </attribute>
+                        <attribute name="Numero_paginas_revista" use="required">
+                            <simpleType>
+                                <restriction base="integer">
+                                    <!-- Tiene que tener un mínimo de 10 páginas y un máximo de 70 -->
+                                    <minInclusive value="10"></minInclusive>
+                                    <maxInclusive value="70"></maxInclusive>
+                                </restriction>
+                            </simpleType>
+                        </attribute>
                     </complexType>
                 </element>
             </sequence>
