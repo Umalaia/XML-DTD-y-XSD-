@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE Biblioteca SYSTEM "Biblioteca.dtd">
+<!DOCTYPE Biblioteca_01 SYSTEM "Biblioteca.dtd">
 
-<Biblioteca>
+<Biblioteca_01>
     <Libros>
         <Libro Id="L0001" tipo_clase_libro="novela" numero_paginas_libro="400">
             <Titulo_libro> La chica del tren </Titulo_libro>
@@ -107,4 +107,4 @@
                 ....30 El tiempo ....50 </Indice_periodico>
         </Periodico>
     </Periodicos>
-</Biblioteca>
+</Biblioteca_01>

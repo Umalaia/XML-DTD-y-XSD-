@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<Biblioteca_02 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Biblioteca.xsd">
+    <Libros>
+        <Libro Id="L1234" tipo_clase_libro="novela" numero_paginas_libro="100">
+            <Titulo_libro>El mar</Titulo_libro>
+            <Capitulo numero_paginas_cap="99">
+                <Titulo_cap>El acantilado</Titulo_cap>
+                <Indice_libro> La marea .....2 </Indice_libro>
+                <Sinopsis>A medida que avanza su evocación se desvelará el trágico suceso que
+                    ocurrió ese verano, el año en el que tuvo lugar la «extraña marea» </Sinopsis>
+                <Contenido_libro enlace_cap="www.elmar/cap1.com">
+                    <Informacion_libro> Informacion capitulo 1</Informacion_libro>
+                </Contenido_libro>
+            </Capitulo>
+        </Libro>
+    </Libros>
+</Biblioteca_02>

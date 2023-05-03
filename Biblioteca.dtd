@@ -1,5 +1,5 @@
 <!-- Definimos los elementos de la biblioteca -->
-<!ELEMENT Biblioteca (Libros,Revistas,Periodicos)>
+<!ELEMENT Biblioteca_01 (Libros,Revistas,Periodicos)>
 
 <!-- Definimos los elementos de Libros -->
 <!ELEMENT Libros (Libro+)>
