@@ -7,22 +7,22 @@
             <Titulo_libro>El mar</Titulo_libro>
             <Capitulo numero_paginas_cap="50">
                 <Titulo_cap>El acantilado</Titulo_cap>
-                <Indice_libro> La marea .....2 </Indice_libro>
+                <Indice_libro>La marea .....2 </Indice_libro>
                 <Sinopsis>A medida que avanza su evocación se desvelará el trágico suceso que
                     ocurrió ese verano, el año en el que tuvo lugar la «extraña marea» </Sinopsis>
                 <Contenido_libro enlace_cap="www.elmar/cap1.com">
-                    <Informacion_libro> Informacion capitulo 1</Informacion_libro>
+                    <Informacion_libro>Informacion capitulo 1</Informacion_libro>
                 </Contenido_libro>
             </Capitulo>
             <Capitulo numero_paginas_cap="49">
-                <Titulo_cap> El remordimiento </Titulo_cap>
-                <Indice_libro> El momento .... 50</Indice_libro>
+                <Titulo_cap>El remordimiento </Titulo_cap>
+                <Indice_libro>El momento .... 50</Indice_libro>
                 <Sinopsis>Max busca un improbable cobijo del presente, demasiado doloroso, en el
                     recuerdo de un momento muy concreto de su infancia: el verano de su iniciación a
                     la vida y sus placeres, del descubrimiento de la amistad y el amor; pero
                     también, finalmente, del dolor y la muerte</Sinopsis>
                 <Contenido_libro enlace_cap="www.elmar/cap2.com">
-                    <Informacion_libro> Información capitulo 2</Informacion_libro>
+                    <Informacion_libro>Información capitulo 2</Informacion_libro>
                 </Contenido_libro>
             </Capitulo>
         </Libro>
@@ -32,7 +32,7 @@
         <Revista Id="R0251" tipo_clase="informática" Numero_paginas_revista="40">
             <Titulo_revista>ChatGPT</Titulo_revista>
             <Numero_de_revista>10</Numero_de_revista>
-            <Indice_contenido> La revolución de ChatGPT ..... 2
+            <Indice_contenido>La revolución de ChatGPT ..... 2
             TOP 10 Pc's</Indice_contenido>
             <Secciones_revista>
                 <Sección_revista Número_páginas_sección="20">
@@ -42,7 +42,7 @@
                 </Sección_revista>
                 <Sección_revista Número_páginas_sección="20">
                     <Contenido_revista enlace_revista="Www.Informaticate/seccion1.com">
-                        <Información_revista> Ranking de Pc's</Información_revista>
+                        <Información_revista>Ranking de Pc's</Información_revista>
                     </Contenido_revista>
                 </Sección_revista>
             </Secciones_revista>
@@ -55,14 +55,13 @@
                 <Seccion_periodico tipo_seccion="deportes">
                     <Articulos Autor="Sheila Orejuela"></Articulos>
                     <Contenido_periodico enlace_periodico="www.internacional/deportes.com">
-                        <Informacion_periodico> Futbol internacional</Informacion_periodico>
+                        <Informacion_periodico>Futbol internacional</Informacion_periodico>
                     </Contenido_periodico>
                 </Seccion_periodico>
                 <Seccion_periodico tipo_seccion="económica">
                     <Articulos Autor="Miguel Del Castillo" />
                     <Contenido_periodico enlace_periodico="www.internacional/economia.com">
-                        <Informacion_periodico> La economia
-                </Informacion_periodico>
+                        <Informacion_periodico>La economia</Informacion_periodico>
                     </Contenido_periodico>
                 </Seccion_periodico>
             </Secciones_periodico>

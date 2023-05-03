@@ -321,7 +321,8 @@
                                             </restriction>
                                         </simpleType>
                                     </attribute>
-                                    <attribute name="fecha_de_publicacion" type="date" use="required">
+                                    <attribute name="fecha_de_publicacion" type="date"
+                                        use="required">
                                     </attribute>
                                 </complexType>
                             </element>
