@@ -1,3 +1,177 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE Biblioteca SYSTEM "Biblioteca.dtd">
+<Biblioteca>
+    <Libros>
+        <libro id="L0001" tipo_clase="novela" numero_paginas="1000">
+            <titulo>Novela muy triste</titulo>
+            <indice>Aqui iria el indice</indice>
+            <capitulos>
+                <capitulo_1 numero_paginas_capitulo="2">
+                    <titulo_capitulo>uno mismo</titulo_capitulo>
+                    <contenido enlace_informacion= "www.google.es"></contenido>
+                </capitulo_1>
+    
+                <capitulo_2 numero_paginas_capitulo="3">
+                    <titulo_capitulo>mas de lo mismo</titulo_capitulo>
+                    <contenido enlace_informacion= "www.google.es"></contenido>
+                </capitulo_2>
+            </capitulos>
+            <sinapsis>breve resumen del libro</sinapsis>
+        </libro>
 
+        <libro id="L0002" tipo_clase="infantil" numero_paginas="100">
+            <titulo>La historia vaca Meg</titulo>
+            <indice>Aqui iria el indice</indice>
+            <capitulos>
+                <capitulo_1 numero_paginas_capitulo="1">
+                    <titulo_capitulo>Granja de Meg</titulo_capitulo>
+                    <contenido enlace_informacion= "www.google.es"></contenido>
+                </capitulo_1>
+    
+                <capitulo_2 numero_paginas_capitulo="2">
+                    <titulo_capitulo>Los amigos de Meg</titulo_capitulo>
+                    <contenido enlace_informacion= "www.google.es"></contenido>
+                </capitulo_2>
+             </capitulos>
+             <sinapsis>breve resumen del libro</sinapsis>
+        </libro>
+
+        <libro id="L0003" tipo_clase="didactico" numero_paginas="500">
+            <titulo>Aprende a soñar</titulo>
+            <indice>Aqui iria el indice</indice>
+            <capitulos>
+                <capitulo_1 numero_paginas_capitulo="1">
+                    <titulo_capitulo>Tumbarse en la cama</titulo_capitulo>
+                    <contenido enlace_informacion= "www.google.es"></contenido>
+                </capitulo_1>
+    
+                <capitulo_2 numero_paginas_capitulo="2">
+                    <titulo_capitulo>Cierra los ojos</titulo_capitulo>
+                    <contenido enlace_informacion= "www.google.es"></contenido>
+                </capitulo_2>
+            </capitulos>
+            <sinapsis>breve resumen del libro</sinapsis>
+         </libro>
+    </Libros>
+
+<Periódicos>
+    <periódico id="P0001" tipo_clase="nacional" fecha_publicación="01/01/0001">
+    <indice></indice>
+        <secciones>
+             <sección tipo_sección="economia"></sección>
+             <articulo autor="Lola">aqui iria el articulo</articulo>
+             <contenido referencia_informacion="www.google.es"></contenido>
+        </secciones>
+        <secciones>
+             <sección tipo_sección="opinión"></sección>
+             <articulo autor="Amparito"></articulo>
+             <contenido referencia_informacion="www.google.es"></contenido>
+        </secciones><secciones>
+             <sección tipo_sección="deportes"></sección>
+             <articulo autor="Manolo">aqui iria el articulo</articulo>
+             <contenido referencia_informacion="www.google.es"></contenido>
+        </secciones>
+        <secciones>
+             <sección tipo_sección="nacional"></sección>
+             <articulo autor="Jacinto">aqui iria el articulo</articulo>
+             <contenido referencia_informacion="www.google.es"></contenido>
+        </secciones>
+        <secciones>
+             <sección tipo_sección="internacional"></sección>
+             <articulo autor="Bonifacio">aqui iria el articulo</articulo>
+             <contenido referencia_informacion="www.google.es"></contenido>
+        </secciones>
+    </periódico>
+    
+    <periódico id="P0002" tipo_clase="internacional" fecha_publicación="01/01/0002">
+    <indice></indice>
+        <secciones>
+             <sección tipo_sección="economia"></sección>
+             <articulo autor="Jessica">aqui iria el articulo</articulo>
+             <contenido referencia_informacion="www.google.es"></contenido>
+        </secciones>
+        <secciones>
+             <sección tipo_sección="opinión"></sección>
+             <articulo autor="Sophie"></articulo>
+             <contenido referencia_informacion="www.google.es"></contenido>
+        </secciones><secciones>
+             <sección tipo_sección="deportes"></sección>
+             <articulo autor="Mark">aqui iria el articulo</articulo>
+             <contenido referencia_informacion="www.google.es"></contenido>
+        </secciones>
+        <secciones>
+             <sección tipo_sección="nacional"></sección>
+             <articulo autor="John">aqui iria el articulo</articulo>
+             <contenido referencia_informacion="www.google.es"></contenido>
+        </secciones>
+        <secciones>
+             <sección tipo_sección="internacional"></sección>
+             <articulo autor="Peter">aqui iria el articulo</articulo>
+             <contenido referencia_informacion="www.google.es"></contenido>
+        </secciones>
+    
+    </periódico>
+
+</Periódicos>
+
+<Revistas>
+    <revista id="R" tipo_clase="informática" número_páginas="50">
+        <titulo>Pecés en el hardware</titulo>
+        <número_revista>1</número_revista>
+        <indice_contenido></indice_contenido>
+        <secciones >
+            <seccion1 número_páginas="3"></seccion1>
+            <contenido enlace_informacion="www.google.es"></contenido>
+            <seccion2 número_páginas="5"></seccion2>
+            <contenido enlace_informacion="www.google.es"></contenido>
+        </secciones>
+    </revista>
+
+     <revista id="R" tipo_clase="corazón" número_páginas="20">
+        <titulo>Aorta</titulo>
+        <número_revista>3</número_revista>
+        <indice_contenido></indice_contenido>
+        <secciones >
+            <seccion1 número_páginas="2"></seccion1>
+            <contenido enlace_informacion="www.google.es"></contenido>
+            <seccion2 número_páginas="3"></seccion2>
+            <contenido enlace_informacion="www.google.es"></contenido>
+        </secciones>
+    </revista>
+
+    <revista id="R" tipo_clase="coches" número_páginas="60">
+        <titulo>Gas Race</titulo>
+        <número_revista>1</número_revista>
+        <indice_contenido></indice_contenido>
+        <secciones >
+            <seccion1 número_páginas="5"></seccion1>
+            <contenido enlace_informacion="www.google.es"></contenido>
+            <seccion2 número_páginas="4"></seccion2>
+            <contenido enlace_informacion="www.google.es"></contenido>
+        </secciones>
+    </revista>
+
+    <revista id="R" tipo_clase="investigación" número_páginas="75">
+        <titulo>Pecés en el hardware</titulo>
+        <número_revista>4</número_revista>
+        <indice_contenido></indice_contenido>
+        <secciones >
+            <seccion1 número_páginas="1"></seccion1>
+            <contenido enlace_informacion="www.google.es"></contenido>
+            <seccion2 número_páginas="6"></seccion2>
+            <contenido enlace_informacion="www.google.es"></contenido>
+        </secciones>
+    </revista>
+
+    <revista id="R" tipo_clase="otras" número_páginas="25">
+        <titulo>Unas y Otras</titulo>
+        <número_revista>6</número_revista>
+        <indice_contenido></indice_contenido>
+        <secciones >
+            <seccion1 número_páginas="3"></seccion1>
+            <contenido enlace_informacion="www.google.es"></contenido>
+            <seccion2 número_páginas="1"></seccion2>
+            <contenido enlace_informacion="www.google.es"></contenido>
+        </secciones>
+    </revista>
+</Revistas>
+</Biblioteca>
