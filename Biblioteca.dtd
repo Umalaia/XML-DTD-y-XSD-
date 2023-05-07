@@ -1,0 +1,56 @@
+<!-- Definimos los elemetos de la Biblioteca -->
+<!ELEMENT Biblioteca ( Libros,Periódicos,Revistas)>
+
+<!-- Definimos los elemetos del libro -->
+
+<!ELEMENT Libros (libro+)>
+<!ELEMENT libro (titulo,indice,capitulos+,sinapsis)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT indice (#PCDATA)>
+<!ELEMENT capitulos (titulo_capitulo,contenido)>
+<!ELEMENT titulo_capitulo (#PCDATA)>
+<!ELEMENT contenido (#PCDATA)>
+<!ELEMENT sinapsis (#PCDATA)>
+
+<!-- Definimos los atributos del libro -->
+
+<!ATTLIST libro id CDATA #REQUIRED>
+<!ATTLIST libro tipo_clase (novela | infantil | didactico) #REQUIRED>
+<!ATTLIST libro numero_paginas CDATA #REQUIRED>
+<!ATTLIST capitulos numero_paginas CDATA #REQUIRED>
+<!ATTLIST contenido enlace_informacion CDATA #REQUIRED>
+
+<!-- Definimos los elementos del periódico -->
+
+<!ELEMENT Periódicos (periódico+)>
+<!ELEMENT periódico (indice,secciones+)>
+<!ELEMENT secciones (sección,articulo,contenido)>
+<!ELEMENT sección (#PCDATA)>
+<!ELEMENT articulo (#PCDATA)>
+
+
+<!-- Definimos los atributos del periódico -->
+
+<!ATTLIST periódico id CDATA #REQUIRED>
+<!ATTLIST periódico tipo_clase (nacional | internacional) #REQUIRED>
+<!ATTLIST periódico fecha_publicación CDATA #REQUIRED>
+<!ATTLIST sección tipo_sección (economia | opinión | deportes | nacional | internacional) #REQUIRED>
+<!ATTLIST articulo autor CDATA #REQUIRED>
+<!ATTLIST contenido enlace_informacion CDATA #REQUIRED>
+
+<!-- Definimos los elementos de la revista -->
+
+<!ELEMENT Revistas (revista+)>
+<!ELEMENT revista (titulo,número_revista,indice,secciones_revista+)>
+<!ELEMENT número_revista (#PCDATA)>
+<!ELEMENT secciones_revista (seccion,contenido)>
+<!ELEMENT seccion (#PCDATA)>
+
+
+<!-- Definimos los atributos de la revista -->
+
+<!ATTLIST revista id CDATA #REQUIRED>
+<!ATTLIST revista tipo_clase (informática | corazón | coches | investigación | otras ) #REQUIRED>
+<!ATTLIST revista número_páginas CDATA #REQUIRED>
+<!ATTLIST seccion número_páginas CDATA #REQUIRED>
+<!ATTLIST contenido enlace_informacion CDATA #REQUIRED>
