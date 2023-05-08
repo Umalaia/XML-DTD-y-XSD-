@@ -3,9 +3,9 @@
 <!-- Definición de validación para Libros y sus elementos -->
 <!ELEMENT Libros (Libro*)>
 
-<!ELEMENT Libro (Titulo_libro, Capitulo+)>
+<!ELEMENT Libro (Titulo_libro, Indice, Sinopsis, Capitulo+)>
 <!ELEMENT Titulo_libro (#PCDATA)>
-<!ELEMENT Capitulo (Titulo_capitulo, Indice, Sinopsis, Contenido_capitulo)>
+<!ELEMENT Capitulo (Titulo_capitulo, Contenido_capitulo)>
 <!ELEMENT Titulo_capitulo (#PCDATA)>
 <!ELEMENT Indice (#PCDATA)>
 <!ELEMENT Sinopsis (#PCDATA)>
@@ -23,15 +23,21 @@
     enlace CDATA #IMPLIED
 >
 
-
-
-
 <!-- Definición de validación para Revistas y sus elementos -->
 <!ELEMENT Revistas (Revista*)>
 
+<!ELEMENT Revista (Titulo_revista, Numero_publicacion, Indice_contenido, Secciones)>
+<!ELEMENT Secciones (Seccion+)>
+<!ELEMENT Seccion (Contenido)>
+<!ELEMENT Contenido (#PCDATA)>
 
-
-
+<!ATTLIST Revista
+    id CDATA #REQUIRED
+    tipo_clase (Informatica | Corazon | Coches | Investigacion | Otras)
+> 
+<!ATTLIST Contenido
+    enlace CDATA #IMPLIED
+>
 
 <!-- Definición de validación para Periodicos y sus elementos -->
 <!ELEMENT Periodicos (Periodico*)>
