@@ -47,140 +47,140 @@
          </libro>
     </Libros>
 
-<Periódicos>
-    <periódico id="P0001" tipo_clase="nacional" fecha_publicación="01/01/0001">
+<Periodicos>
+    <periodico id="P0001" tipo_clase="nacional" fecha_publicacion="01/01/2023">
         <indice>Aqui iria el indice</indice>
         <secciones>
-             <sección tipo_sección="economia"></sección>
+             <Pseccion tipo_seccion="economia"></Pseccion>
              <articulo autor="Lola">aqui iria el articulo</articulo>
              <contenido enlace_informacion="www.google.es"></contenido>
         </secciones>
         <secciones>
-             <sección tipo_sección="opinión"></sección>
+             <Pseccion tipo_seccion="opinion"></Pseccion>
              <articulo autor="Amparito"></articulo>
              <contenido enlace_informacion="www.google.es"></contenido>
         </secciones>
         <secciones>
-             <sección tipo_sección="deportes"></sección>
+             <Pseccion tipo_seccion="deportes"></Pseccion>
              <articulo autor="Manolo">aqui iria el articulo</articulo>
              <contenido enlace_informacion="www.google.es"></contenido>
         </secciones>
         <secciones>
-             <sección tipo_sección="nacional"></sección>
+             <Pseccion tipo_seccion="nacional"></Pseccion>
              <articulo autor="Jacinto">aqui iria el articulo</articulo>
              <contenido enlace_informacion="www.google.es"></contenido>
         </secciones>
         <secciones>
-             <sección tipo_sección="internacional"></sección>
+             <Pseccion tipo_seccion="internacional"></Pseccion>
              <articulo autor="Bonifacio">aqui iria el articulo</articulo>
              <contenido enlace_informacion="www.google.es"></contenido>
         </secciones>
-    </periódico>
+    </periodico>
     
-    <periódico id="P0002" tipo_clase="internacional" fecha_publicación="01/01/0002">
+    <periodico id="P0002" tipo_clase="internacional" fecha_publicacion="01/02/2023">
     <indice>Aqui iria el indice</indice>
         <secciones>
-             <sección tipo_sección="economia"></sección>
+             <Pseccion tipo_seccion="economia"></Pseccion>
              <articulo autor="Jessica">aqui iria el articulo</articulo>
              <contenido enlace_informacion="www.google.es"></contenido>
         </secciones>
         <secciones>
-             <sección tipo_sección="opinión"></sección>
+             <Pseccion tipo_seccion="opinion"></Pseccion>
              <articulo autor="Sophie"></articulo>
              <contenido enlace_informacion="www.google.es"></contenido>
         </secciones>
         <secciones>
-             <sección tipo_sección="deportes"></sección>
+             <Pseccion tipo_seccion="deportes"></Pseccion>
              <articulo autor="Mark">aqui iria el articulo</articulo>
              <contenido enlace_informacion="www.google.es"></contenido>
         </secciones>
         <secciones>
-             <sección tipo_sección="nacional"></sección>
+             <Pseccion tipo_seccion="nacional"></Pseccion>
              <articulo autor="John">aqui iria el articulo</articulo>
              <contenido enlace_informacion="www.google.es"></contenido>
         </secciones>
         <secciones>
-             <sección tipo_sección="internacional"></sección>
+             <Pseccion tipo_seccion="internacional"></Pseccion>
              <articulo autor="Peter">aqui iria el articulo</articulo>
              <contenido enlace_informacion="www.google.es"></contenido>
         </secciones>
     
-    </periódico>
+    </periodico>
 
-</Periódicos>
+</Periodicos>
 
 <Revistas>
-    <revista id="R" tipo_clase="informática" número_páginas="50">
+    <revista id="R" tipo_clase="informatica" numero_paginas="50">
         <titulo>Pecés en el hardware</titulo>
-        <número_revista>1</número_revista>
+        <numero_revista>1</numero_revista>
         <indice>Aqui iria el indice</indice>
         <secciones_revista>
-            <seccion número_páginas="3"></seccion>
+            <Rseccion numero_paginas="3"></Rseccion>
             <contenido enlace_informacion="www.google.es"></contenido>
         </secciones_revista>
 
         <secciones_revista>
-            <seccion número_páginas="5"></seccion>
+            <Rseccion numero_paginas="5"></Rseccion>
             <contenido enlace_informacion="www.google.es"></contenido>
         </secciones_revista>
     </revista>
 
-     <revista id="R" tipo_clase="corazón" número_páginas="20">
+     <revista id="R" tipo_clase="corazon" numero_paginas="20">
         <titulo>Aorta</titulo>
-        <número_revista>3</número_revista>
+        <numero_revista>3</numero_revista>
         <indice>Aqui iria el indice</indice>
         <secciones_revista >
-            <seccion número_páginas="2"></seccion>
+            <Rseccion numero_paginas="2"></Rseccion>
             <contenido enlace_informacion="www.google.es"></contenido>
          </secciones_revista>   
 
          <secciones_revista>
-            <seccion número_páginas="3"></seccion>
+            <Rseccion numero_paginas="3"></Rseccion>
             <contenido enlace_informacion="www.google.es"></contenido>
         </secciones_revista>
     </revista>
 
-    <revista id="R" tipo_clase="coches" número_páginas="60">
+    <revista id="R" tipo_clase="coches" numero_paginas="60">
         <titulo>Gas Race</titulo>
-        <número_revista>1</número_revista>
+        <numero_revista>1</numero_revista>
         <indice>Aqui iria el indice</indice>
         <secciones_revista >
-            <seccion número_páginas="5"></seccion>
+            <Rseccion numero_paginas="5"></Rseccion>
             <contenido enlace_informacion="www.google.es"></contenido>
          </secciones_revista>
 
          <secciones_revista>
-            <seccion número_páginas="4"></seccion>
+            <Rseccion numero_paginas="4"></Rseccion>
             <contenido enlace_informacion="www.google.es"></contenido>
         </secciones_revista>
     </revista>
 
-    <revista id="R" tipo_clase="investigación" número_páginas="75">
+    <revista id="R" tipo_clase="investigacion" numero_paginas="75">
         <titulo>Pecés en el hardware</titulo>
-        <número_revista>4</número_revista>
+        <numero_revista>4</numero_revista>
         <indice>Aqui iria el indice</indice>
         <secciones_revista>
-            <seccion número_páginas="1"></seccion>
+            <Rseccion numero_paginas="1"></Rseccion>
             <contenido enlace_informacion="www.google.es"></contenido>
          </secciones_revista>
 
          <secciones_revista>
-            <seccion número_páginas="6"></seccion>
+            <Rseccion numero_paginas="6"></Rseccion>
             <contenido enlace_informacion="www.google.es"></contenido>
         </secciones_revista>
     </revista>
 
-    <revista id="R" tipo_clase="otras" número_páginas="25">
+    <revista id="R" tipo_clase="otras" numero_paginas="25">
         <titulo>Unas y Otras</titulo>
-        <número_revista>6</número_revista>
+        <numero_revista>6</numero_revista>
         <indice>Aqui iria el indice</indice>
         <secciones_revista>
-            <seccion número_páginas="3"></seccion>
+            <Rseccion numero_paginas="3"></Rseccion>
             <contenido enlace_informacion="www.google.es"></contenido>
          </secciones_revista>
 
          <secciones_revista>
-            <seccion número_páginas="1"></seccion>
+            <Rseccion numero_paginas="1"></Rseccion>
             <contenido enlace_informacion="www.google.es"></contenido>
         </secciones_revista>
     </revista>
