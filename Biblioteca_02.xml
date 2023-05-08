@@ -29,22 +29,22 @@
     </Libros>
 
     <Revistas>
-        <Revista Id="R0251" tipo_clase="informática" Numero_paginas_revista="40">
+        <Revista Id="R0251" tipo_clase="informatica" numero_paginas_revista="40">
             <Titulo_revista>ChatGPT</Titulo_revista>
             <Numero_de_revista>10</Numero_de_revista>
             <Indice_contenido>La revolución de ChatGPT ..... 2
             TOP 10 Pc's</Indice_contenido>
             <Secciones_revista>
-                <Sección_revista Número_páginas_sección="20">
+                <Seccion_revista numero_paginas_seccion="20">
                     <Contenido_revista enlace_revista="Www.Informaticate/seccion1.com">
-                        <Información_revista>La actualidad de la información</Información_revista>
+                        <Informacion_revista>La actualidad de la información</Informacion_revista>
                     </Contenido_revista>
-                </Sección_revista>
-                <Sección_revista Número_páginas_sección="20">
+                </Seccion_revista>
+                <Seccion_revista numero_paginas_seccion="20">
                     <Contenido_revista enlace_revista="Www.Informaticate/seccion1.com">
-                        <Información_revista>Ranking de Pc's</Información_revista>
+                        <Informacion_revista>Ranking de Pc's</Informacion_revista>
                     </Contenido_revista>
-                </Sección_revista>
+                </Seccion_revista>
             </Secciones_revista>
         </Revista>
     </Revistas>
@@ -58,7 +58,7 @@
                         <Informacion_periodico>Futbol internacional</Informacion_periodico>
                     </Contenido_periodico>
                 </Seccion_periodico>
-                <Seccion_periodico tipo_seccion="económica">
+                <Seccion_periodico tipo_seccion="economica">
                     <Articulos Autor="Miguel Del Castillo" />
                     <Contenido_periodico enlace_periodico="www.internacional/economia.com">
                         <Informacion_periodico>La economia</Informacion_periodico>

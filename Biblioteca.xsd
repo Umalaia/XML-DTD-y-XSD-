@@ -83,7 +83,7 @@
                                                 didáctico -->
                                                 <enumeration value="novela"></enumeration>
                                                 <enumeration value="infantil"></enumeration>
-                                                <enumeration value="didáctico"></enumeration>
+                                                <enumeration value="didactico"></enumeration>
                                             </restriction>
                                         </simpleType>
                                     </attribute>
@@ -126,7 +126,7 @@
                                         <element name="Secciones_revista">
                                             <complexType>
                                                 <sequence>
-                                                    <element name="Sección_revista" minOccurs="1"
+                                                    <element name="Seccion_revista" minOccurs="1"
                                                         maxOccurs="unbounded">
                                                         <complexType>
                                                             <sequence>
@@ -134,7 +134,7 @@
                                                                     <complexType>
                                                                         <sequence>
                                                                             <element
-                                                                                name="Información_revista"></element>
+                                                                                name="Informacion_revista"></element>
                                                                         </sequence>
                                                                         <attribute
                                                                             name="enlace_revista"
@@ -153,7 +153,7 @@
                                                                     </complexType>
                                                                 </element>
                                                             </sequence>
-                                                            <attribute name="Número_páginas_sección"
+                                                            <attribute name="numero_paginas_seccion"
                                                                 use="required">
                                                                 <simpleType>
                                                                     <restriction base="integer">
@@ -186,15 +186,15 @@
                                                 <!-- Tiene que ser del tipo (informática, corazón,
                                                 coches,
                                     investigación u otras) -->
-                                                <enumeration value="informática"></enumeration>
-                                                <enumeration value="corazón"></enumeration>
+                                                <enumeration value="informatica"></enumeration>
+                                                <enumeration value="corazon"></enumeration>
                                                 <enumeration value="coches"></enumeration>
-                                                <enumeration value="investigación"></enumeration>
+                                                <enumeration value="investigacion"></enumeration>
                                                 <enumeration value="otras"></enumeration>
                                             </restriction>
                                         </simpleType>
                                     </attribute>
-                                    <attribute name="Numero_paginas_revista" use="required">
+                                    <attribute name="numero_paginas_revista" use="required">
                                         <simpleType>
                                             <restriction base="integer">
                                                 <!-- Tiene que tener un mínimo de 10 páginas y un
@@ -284,8 +284,8 @@
                                                                         deportes, nacional o
                                                                         internacional -->
                                                                         <enumeration
-                                                                            value="económica"></enumeration>
-                                                                        <enumeration value="opinión"></enumeration>
+                                                                            value="economica"></enumeration>
+                                                                        <enumeration value="opinion"></enumeration>
                                                                         <enumeration
                                                                             value="deportes"></enumeration>
                                                                         <enumeration
@@ -336,5 +336,4 @@
 
         </complexType>
     </element>
-
 </schema>

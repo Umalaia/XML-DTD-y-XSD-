@@ -15,7 +15,7 @@
 
 <!-- Definimos los atributos de Libros -->
 <!ATTLIST Libro Id ID #REQUIRED>  <!-- Tiene que empezar siempre por L seguido de 4 digitos -->
-<!ATTLIST Libro tipo_clase_libro (novela | infantil | didáctico) #REQUIRED>
+<!ATTLIST Libro tipo_clase_libro (novela | infantil | didactico) #REQUIRED>
 <!ATTLIST Libro numero_paginas_libro CDATA #REQUIRED>
 
 <!ATTLIST Capitulo numero_paginas_cap CDATA #REQUIRED>
@@ -37,7 +37,7 @@
 
 <!-- Definimos los atributos de Revistas -->
 <!ATTLIST Revista Id ID #REQUIRED>  <!-- Tiene que empezar siempre por R seguido de 4 digitos -->
-<!ATTLIST Revista tipo_clase (informática | corazón | coches | investigación | otras) #REQUIRED>
+<!ATTLIST Revista tipo_clase (informatica | corazon | coches | investigacion | otras) #REQUIRED>
 <!ATTLIST Revista numero_paginas_revista CDATA #REQUIRED>
 <!ATTLIST Seccion_revista sec CDATA #IMPLIED>
 <!ATTLIST Seccion_revista numero_paginas_seccion CDATA #REQUIRED>
@@ -58,6 +58,6 @@
 <!ATTLIST Periodico Id ID #REQUIRED> <!-- Tiene que empezar siempre por P seguido de 4 digitos -->
 <!ATTLIST Periodico tipo_clase_periodico (nacional | internacional) #REQUIRED>
 <!ATTLIST Periodico fecha_publicacion CDATA #REQUIRED>
-<!ATTLIST Seccion_periodico tipo_seccion (económica | opinión | deportes | nacional | internacional) #REQUIRED>
+<!ATTLIST Seccion_periodico tipo_seccion (economica | opinion | deportes | nacional | internacional) #REQUIRED>
 <!ATTLIST Articulos autor CDATA #REQUIRED>
 <!ATTLIST Contenido_periodico enlace_periodico CDATA #REQUIRED>

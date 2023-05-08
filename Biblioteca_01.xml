@@ -28,7 +28,7 @@
                 </Contenido_libro>
             </Capitulo>
         </Libro>
-        <Libro Id="L0002" tipo_clase_libro="didáctico" numero_paginas_libro="200">
+        <Libro Id="L0002" tipo_clase_libro="didactico" numero_paginas_libro="200">
             <Titulo_libro>Els dimonis de pandora</Titulo_libro>
             <Capitulo numero_paginas_cap="50">
                 <Titulo_cap>El comienzo</Titulo_cap>
@@ -63,7 +63,7 @@
     </Libros>
 
     <Revistas>
-        <Revista Id="R0001" tipo_clase="corazón" numero_paginas_revista="40">
+        <Revista Id="R0001" tipo_clase="corazon" numero_paginas_revista="40">
             <Titulo_revista>Hearts</Titulo_revista>
             <Numero_de_revista>1</Numero_de_revista>
             <Indice_contenido>Portada ....1 Famosos ....2 Cotilleo ....16 Curiosidades ....36</Indice_contenido>
@@ -96,7 +96,7 @@
                         <Informacion_periodico>Informacion nacional de la semana</Informacion_periodico>
                     </Contenido_periodico>
                 </Seccion_periodico>
-                <Seccion_periodico tipo_seccion="opinión">
+                <Seccion_periodico tipo_seccion="opinion">
                     <Articulos autor="Sheila Orejuela"> Opiniones </Articulos>
                     <Contenido_periodico enlace_periodico="www.nacional/opinion.com">
                         <Informacion_periodico>Opiniones semanales</Informacion_periodico>
