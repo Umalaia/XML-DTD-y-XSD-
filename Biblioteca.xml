@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE Biblioteca SYSTEM "Biblioteca.dtd">
+<!DOCTYPE Biblioteca SYSTEM "DTD_Biblioteca.dtd">
 
 <Biblioteca>
     <Libros>
-        <Libro id="L1997" tipo_clase="novela" num_paginas="250">
+        <Libro id="L1997" tipo_clase="Novela" num_paginas="250">
             <Titulo_libro>Harry Potter y la piedra filosofal</Titulo_libro>
             <Indice>
                 1-  El niño que sobrevivió
@@ -48,7 +48,7 @@
             </Capitulo>
         </Libro>
         
-        <Libro id="L2005" tipo_clase="infantil" num_paginas="64">
+        <Libro id="L2005" tipo_clase="Infantil" num_paginas="64">
             <Titulo_libro>Kika embruja los deberes</Titulo_libro>
             <Indice>
                 1- De camino al cole
@@ -68,7 +68,7 @@
             </Capitulo>
         </Libro>
         
-        <Libro id="L2023" tipo_clase="didactico" num_paginas="321">
+        <Libro id="L2023" tipo_clase="Didactico" num_paginas="321">
             <Titulo_libro>
                 Git y GitHub desde cero: Guía de estudio teórico-práctica paso a paso 
                 más curso en vídeo
@@ -148,57 +148,19 @@
     </Libros>
 
     <Revistas>
-        <Revista id="RXXXX" tipo_clase="Informatica">
-            <Titulo_revista></Titulo_revista>
-            <Numero_publicacion></Numero_publicacion>
-            <Indice_contenido></Indice_contenido>
+        <Revista id="R1478" tipo_clase="Informatica">
+            <Titulo_revista>De bit en bit</Titulo_revista>
+            <Numero_publicacion>5</Numero_publicacion>
+            <Indice_contenido> 
+                Introduccion
+                Entrevistas
+                Bits de historia
+                Bits de lectura
+                Articulos
+            </Indice_contenido>
             <Secciones>
                 <Seccion>
-                    <Contenido enlace=""></Contenido>
-                </Seccion>
-            </Secciones>
-        </Revista>
-        
-        <Revista id="RXXXX" tipo_clase="Corazon">
-            <Titulo_revista></Titulo_revista>
-            <Numero_publicacion></Numero_publicacion>
-            <Indice_contenido></Indice_contenido>
-            <Secciones>
-                <Seccion>
-                    <Contenido enlace=""></Contenido>
-                </Seccion>
-            </Secciones>
-        </Revista>
-        
-        <Revista id="RXXXX" tipo_clase="Coches">
-            <Titulo_revista></Titulo_revista>
-            <Numero_publicacion></Numero_publicacion>
-            <Indice_contenido></Indice_contenido>
-            <Secciones>
-                <Seccion>
-                    <Contenido enlace=""></Contenido>
-                </Seccion>
-            </Secciones>
-        </Revista>
-
-        <Revista id="RXXXX" tipo_clase="Investigacion">
-            <Titulo_revista></Titulo_revista>
-            <Numero_publicacion></Numero_publicacion>
-            <Indice_contenido></Indice_contenido>
-            <Secciones>
-                <Seccion>
-                    <Contenido enlace=""></Contenido>
-                </Seccion>
-            </Secciones>
-        </Revista>
-        
-        <Revista id="RXXXX" tipo_clase="Otras">
-            <Titulo_revista></Titulo_revista>
-            <Numero_publicacion></Numero_publicacion>
-            <Indice_contenido></Indice_contenido>
-            <Secciones>
-                <Seccion>
-                    <Contenido enlace=""></Contenido>
+                    <Contenido enlace="https://www.debitenbit.es"></Contenido>
                 </Seccion>
             </Secciones>
         </Revista>
@@ -210,66 +172,21 @@
             <Secciones>
                 <Seccion tipo_seccion="economia">
                     <Articulo autor="Pepe"></Articulo>
-                    <Articulo autor="Popo"></Articulo>
-                    <Articulo autor="Pipi"></Articulo>
                     <Contenido enlace=""></Contenido>
                 </Seccion>
                 <Seccion tipo_seccion="opinion">
-                    <Articulo autor="Pepe"></Articulo>
                     <Articulo autor="Popo"></Articulo>
-                    <Articulo autor="Pipi"></Articulo>
                     <Contenido enlace=""></Contenido>
                 </Seccion>
                 <Seccion tipo_seccion="deportes">
-                    <Articulo autor="Pepe"></Articulo>
-                    <Articulo autor="Popo"></Articulo>
                     <Articulo autor="Pipi"></Articulo>
                     <Contenido enlace=""></Contenido>
                 </Seccion>
                 <Seccion tipo_seccion="nacional">
                     <Articulo autor="Pepe"></Articulo>
-                    <Articulo autor="Popo"></Articulo>
-                    <Articulo autor="Pipi"></Articulo>
                     <Contenido enlace=""></Contenido>
                 </Seccion>
                 <Seccion tipo_seccion="internacional">
-                    <Articulo autor="Pepe"></Articulo>
-                    <Articulo autor="Popo"></Articulo>
-                    <Articulo autor="Pipi"></Articulo>
-                    <Contenido enlace=""></Contenido>
-                </Seccion>
-            </Secciones>
-        </Periodico>
-        <Periodico id="PXXXX" tipo_clase="Internacional" fecha_publicacion="">
-            <Indice></Indice>
-            <Secciones>
-                <Seccion tipo_seccion="economia">
-                    <Articulo autor="Pepe"></Articulo>
-                    <Articulo autor="Popo"></Articulo>
-                    <Articulo autor="Pipi"></Articulo>
-                    <Contenido enlace=""></Contenido>
-                </Seccion>
-                <Seccion tipo_seccion="opinion">
-                    <Articulo autor="Pepe"></Articulo>
-                    <Articulo autor="Popo"></Articulo>
-                    <Articulo autor="Pipi"></Articulo>
-                    <Contenido enlace=""></Contenido>
-                </Seccion>
-                <Seccion tipo_seccion="deportes">
-                    <Articulo autor="Pepe"></Articulo>
-                    <Articulo autor="Popo"></Articulo>
-                    <Articulo autor="Pipi"></Articulo>
-                    <Contenido enlace=""></Contenido>
-                </Seccion>
-                <Seccion tipo_seccion="nacional">
-                    <Articulo autor="Pepe"></Articulo>
-                    <Articulo autor="Popo"></Articulo>
-                    <Articulo autor="Pipi"></Articulo>
-                    <Contenido enlace=""></Contenido>
-                </Seccion>
-                <Seccion tipo_seccion="internacional">
-                    <Articulo autor="Pepe"></Articulo>
-                    <Articulo autor="Popo"></Articulo>
                     <Articulo autor="Pipi"></Articulo>
                     <Contenido enlace=""></Contenido>
                 </Seccion>

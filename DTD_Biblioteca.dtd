@@ -1,4 +1,4 @@
-<!ELEMENT Biblioteca (Libros?,Revistas?,Periodicos?)>
+<!ELEMENT Biblioteca (Libros,Revistas,Periodicos)>
 
 <!-- Definición de validación para Libros y sus elementos -->
 <!ELEMENT Libros (Libro*)>
@@ -13,7 +13,7 @@
 
 <!ATTLIST Libro
     id CDATA #REQUIRED
-    tipo_clase (novela | infantil | didactico) #REQUIRED
+    tipo_clase (Novela | Infantil | Didactico) #REQUIRED
     num_paginas CDATA #IMPLIED
 >
 <!ATTLIST Capitulo
@@ -26,7 +26,10 @@
 <!-- Definición de validación para Revistas y sus elementos -->
 <!ELEMENT Revistas (Revista*)>
 
-<!ELEMENT Revista (Titulo_revista, Numero_publicacion, Indice_contenido, Secciones)>
+<!ELEMENT Revista (Titulo_revista, Numero_publicacion, Indice_contenido?, Secciones?)>
+<!ELEMENT Titulo_revista (#PCDATA)>
+<!ELEMENT Numero_publicacion (#PCDATA)>
+<!ELEMENT Indice_contenido (#PCDATA)>
 <!ELEMENT Secciones (Seccion+)>
 <!ELEMENT Seccion (Contenido)>
 <!ELEMENT Contenido (#PCDATA)>
@@ -41,3 +44,25 @@
 
 <!-- Definición de validación para Periodicos y sus elementos -->
 <!ELEMENT Periodicos (Periodico*)>
+
+<!ELEMENT Periodico (Indice, Secciones)>
+<!ELEMENT Indice (#PCDATA)>
+<!ELEMENT Secciones (Seccion+)>
+<!ELEMENT Seccion (Articulo+, Contenido?)>
+<!ELEMENT Articulo (#PCDATA)>
+<!ELEMENT Contenido (#PCDATA)>
+
+<!ATTLIST Periodico
+    id CDATA #REQUIRED
+    tipo_clase (Nacional | Internacional) #REQUIRED
+    fecha_publicacion CDATA #REQUIRED
+>
+<!ATTLIST Seccion
+    tipo_seccion (economia | opinion | deportes | nacional | internacional) #REQUIRED
+>
+<!ATTLIST Articulo
+    autor CDATA #IMPLIED
+>
+<!ATTLIST Contenido
+    enlace CDATA #IMPLIED
+>
