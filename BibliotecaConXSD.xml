@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE Biblioteca SYSTEM "DTD_Biblioteca.dtd">
 
-<Biblioteca >
+<Biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation= "Biblioteca.xsd">
     <Libros>
         <Libro id_lbr="L1997" tipo_clase_lbr="Novela" num_paginas_lbr="250">
             <Titulo_lbr>Harry Potter y la piedra filosofal</Titulo_lbr>
@@ -167,7 +167,7 @@
     </Revistas>
 
     <Periodicos>
-        <Periodico id_pr="P1993" tipo_clase_pr="Nacional" fecha_publicacion_pr="17/07/2023">
+        <Periodico id_pr="P1993" tipo_clase_pr="Nacional" fecha_publicacion_pr="2023-07-17">
             <Indice_pr></Indice_pr>
             <Secciones_pr>
                 <Seccion_pr tipo_seccion_pr="economia">
