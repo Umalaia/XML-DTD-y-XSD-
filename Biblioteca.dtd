@@ -1,0 +1,37 @@
+<!ELEMENT Biblioteca (Libros?,Revistas?,Periodicos?)>
+
+<!-- Definición de validación para Libros y sus elementos -->
+<!ELEMENT Libros (Libro*)>
+
+<!ELEMENT Libro (Titulo_libro, Capitulo+)>
+<!ELEMENT Titulo_libro (#PCDATA)>
+<!ELEMENT Capitulo (Titulo_capitulo, Indice, Sinopsis, Contenido_capitulo)>
+<!ELEMENT Titulo_capitulo (#PCDATA)>
+<!ELEMENT Indice (#PCDATA)>
+<!ELEMENT Sinopsis (#PCDATA)>
+<!ELEMENT Contenido_capitulo (#PCDATA)>
+
+<!ATTLIST Libro
+    id CDATA #REQUIRED
+    tipo_clase (novela | infantil | didactico) #REQUIRED
+    num_paginas CDATA #IMPLIED
+>
+<!ATTLIST Capitulo
+    num_paginas CDATA #IMPLIED
+>
+<!ATTLIST Contenido_capitulo
+    enlace CDATA #IMPLIED
+>
+
+
+
+
+<!-- Definición de validación para Revistas y sus elementos -->
+<!ELEMENT Revistas (Revista*)>
+
+
+
+
+
+<!-- Definición de validación para Periodicos y sus elementos -->
+<!ELEMENT Periodicos (Periodico*)>

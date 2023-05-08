@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Biblioteca SYSTEM "Biblioteca.dtd" >
 
 <Biblioteca>
     <Libros>
@@ -55,7 +56,7 @@
     </Libros>
 
     <Revistas>
-        <Revistas id="RXXXX" tipo_clase="Informatica">
+        <Revista id="RXXXX" tipo_clase="Informatica">
             <Titulo_revista></Titulo_revista>
             <Numero_publicacion></Numero_publicacion>
             <Indice_contenido></Indice_contenido>
@@ -64,9 +65,9 @@
                     <Contenido enlace=""></Contenido>
                 </Seccion>
             </Secciones>
-        </Revistas>
+        </Revista>
         
-        <Revistas id="RXXXX" tipo_clase="Corazon">
+        <Revista id="RXXXX" tipo_clase="Corazon">
             <Titulo_revista></Titulo_revista>
             <Numero_publicacion></Numero_publicacion>
             <Indice_contenido></Indice_contenido>
@@ -75,9 +76,9 @@
                     <Contenido enlace=""></Contenido>
                 </Seccion>
             </Secciones>
-        </Revistas>
+        </Revista>
         
-        <Revistas id="RXXXX" tipo_clase="Coches">
+        <Revista id="RXXXX" tipo_clase="Coches">
             <Titulo_revista></Titulo_revista>
             <Numero_publicacion></Numero_publicacion>
             <Indice_contenido></Indice_contenido>
@@ -86,9 +87,9 @@
                     <Contenido enlace=""></Contenido>
                 </Seccion>
             </Secciones>
-        </Revistas>
+        </Revista>
 
-        <Revistas id="RXXXX" tipo_clase="Investigacion">
+        <Revista id="RXXXX" tipo_clase="Investigacion">
             <Titulo_revista></Titulo_revista>
             <Numero_publicacion></Numero_publicacion>
             <Indice_contenido></Indice_contenido>
@@ -97,9 +98,9 @@
                     <Contenido enlace=""></Contenido>
                 </Seccion>
             </Secciones>
-        </Revistas>
+        </Revista>
         
-        <Revistas id="RXXXX" tipo_clase="Otras">
+        <Revista id="RXXXX" tipo_clase="Otras">
             <Titulo_revista></Titulo_revista>
             <Numero_publicacion></Numero_publicacion>
             <Indice_contenido></Indice_contenido>
@@ -108,10 +109,10 @@
                     <Contenido enlace=""></Contenido>
                 </Seccion>
             </Secciones>
-        </Revistas>
+        </Revista>
     </Revistas>
 
-    <Periodico>
+    <Periodicos>
         <Periodico id="PXXXX" tipo_clase="Nacional" fecha_publicacion="">
             <Indice></Indice>
             <Secciones>
@@ -182,6 +183,6 @@
                 </Seccion>
             </Secciones>
         </Periodico>
-    </Periodico>
+    </Periodicos>
 
 </Biblioteca>
