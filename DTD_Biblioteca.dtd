@@ -62,7 +62,7 @@
     fecha_publicacion_pr CDATA #REQUIRED
 >
 <!ATTLIST Seccion_pr
-    tipo_seccion_pr (economia | opinion | deportes | nacional | internacional) #REQUIRED
+    tipo_seccion_pr (Economia | Opinion | Deportes | Nacional | Internacional) #REQUIRED
 >
 <!ATTLIST Articulo_pr
     autor CDATA #IMPLIED

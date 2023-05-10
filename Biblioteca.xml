@@ -170,23 +170,23 @@
         <Periodico id_pr="P1993" tipo_clase_pr="Nacional" fecha_publicacion_pr="17/07/2023">
             <Indice_pr></Indice_pr>
             <Secciones_pr>
-                <Seccion_pr tipo_seccion_pr="economia">
+                <Seccion_pr tipo_seccion_pr="Economia">
                     <Articulo_pr autor="Pepe"></Articulo_pr>
                     <Contenido_pr enlace_pr=""></Contenido_pr>
                 </Seccion_pr>
-                <Seccion_pr tipo_seccion_pr="opinion">
+                <Seccion_pr tipo_seccion_pr="Opinion">
                     <Articulo_pr autor="Popo"></Articulo_pr>
                     <Contenido_pr enlace_pr=""></Contenido_pr>
                 </Seccion_pr>
-                <Seccion_pr tipo_seccion_pr="deportes">
+                <Seccion_pr tipo_seccion_pr="Deportes">
                     <Articulo_pr autor="Pipi"></Articulo_pr>
                     <Contenido_pr enlace_pr=""></Contenido_pr>
                 </Seccion_pr>
-                <Seccion_pr tipo_seccion_pr="nacional">
+                <Seccion_pr tipo_seccion_pr="Nacional">
                     <Articulo_pr autor="Pepe"></Articulo_pr>
                     <Contenido_pr enlace_pr=""></Contenido_pr>
                 </Seccion_pr>
-                <Seccion_pr tipo_seccion_pr="internacional">
+                <Seccion_pr tipo_seccion_pr="Internacional">
                     <Articulo_pr autor="Pipi"></Articulo_pr>
                     <Contenido_pr enlace_pr=""></Contenido_pr>
                 </Seccion_pr>
