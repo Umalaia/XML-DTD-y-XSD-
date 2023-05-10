@@ -36,8 +36,12 @@
 
 <!ATTLIST Revista
     id_rv CDATA #REQUIRED
-tipo_clase_rv (Informatica | Corazon | Coches | Investigacion | Otras) #REQUIRED
+    tipo_clase_rv (Informatica | Corazon | Coches | Investigacion | Otras) #REQUIRED
+    num_paginas_rv CDATA #REQUIRED
 > 
+<!ATTLIST Seccion_rv
+    num_paginas_seccion CDATA #REQUIRED
+>
 <!ATTLIST Contenido_rv
     enlace_rv CDATA #IMPLIED
 >

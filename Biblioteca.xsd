@@ -63,6 +63,7 @@
                                                                     </xs:complexType>
                                                                 </xs:element>
                                                             </xs:sequence>
+                                                            <xs:attribute name="num_paginas_seccion" type="xs:integer"></xs:attribute>
                                                         </xs:complexType>
                                                     </xs:element>
                                                 </xs:sequence>
@@ -77,6 +78,7 @@
                                         </xs:simpleType>
                                     </xs:attribute>
                                     <xs:attribute name="tipo_clase_rv"></xs:attribute>
+                                    <xs:attribute name="num_paginas_rv" type="xs:integer"></xs:attribute>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>

@@ -148,7 +148,7 @@
     </Libros>
 
     <Revistas>
-        <Revista id_rv="R1478" tipo_clase_rv="Informatica">
+        <Revista id_rv="R1478" tipo_clase_rv="Informatica" num_paginas_rv="57">
             <Titulo_rv>De bit en bit</Titulo_rv>
             <Numero_publicacion_rv>5</Numero_publicacion_rv>
             <Indice_contenido_rv> 
@@ -159,7 +159,7 @@
                 Articulos
             </Indice_contenido_rv>
             <Secciones_rv>
-                <Seccion_rv>
+                <Seccion_rv num_paginas_seccion="5">
                     <Contenido_rv enlace_rv="https://www.debitenbit.es"></Contenido_rv>
                 </Seccion_rv>
             </Secciones_rv>
