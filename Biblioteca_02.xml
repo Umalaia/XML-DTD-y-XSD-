@@ -8,8 +8,10 @@
             <Capitulo numero_paginas_cap="50">
                 <Titulo_cap>El acantilado</Titulo_cap>
                 <Indice_libro>La marea .....2 </Indice_libro>
-                <Sinopsis>A medida que avanza su evocación se desvelará el trágico suceso que
-                    ocurrió ese verano, el año en el que tuvo lugar la «extraña marea» </Sinopsis>
+                <Sinopsis>
+                    A medida que avanza su evocación se desvelará el trágico suceso que
+                    ocurrió ese verano, el año en el que tuvo lugar la «extraña marea» 
+                </Sinopsis>
                 <Contenido_libro enlace_cap="www.elmar/cap1.com">
                     <Informacion_libro>Informacion capitulo 1</Informacion_libro>
                 </Contenido_libro>
@@ -17,10 +19,12 @@
             <Capitulo numero_paginas_cap="49">
                 <Titulo_cap>El remordimiento </Titulo_cap>
                 <Indice_libro>El momento .... 50</Indice_libro>
-                <Sinopsis>Max busca un improbable cobijo del presente, demasiado doloroso, en el
+                <Sinopsis>
+                    Max busca un improbable cobijo del presente, demasiado doloroso, en el
                     recuerdo de un momento muy concreto de su infancia: el verano de su iniciación a
                     la vida y sus placeres, del descubrimiento de la amistad y el amor; pero
-                    también, finalmente, del dolor y la muerte</Sinopsis>
+                    también, finalmente, del dolor y la muerte
+                </Sinopsis>
                 <Contenido_libro enlace_cap="www.elmar/cap2.com">
                     <Informacion_libro>Información capitulo 2</Informacion_libro>
                 </Contenido_libro>
@@ -32,8 +36,10 @@
         <Revista Id="R0251" tipo_clase="informatica" numero_paginas_revista="40">
             <Titulo_revista>ChatGPT</Titulo_revista>
             <Numero_de_revista>10</Numero_de_revista>
-            <Indice_contenido>La revolución de ChatGPT ..... 2
-            TOP 10 Pc's</Indice_contenido>
+            <Indice_contenido>
+                La revolución de ChatGPT ..... 2  
+                TOP 10 Pc's    ..... 22
+            </Indice_contenido>
             <Secciones_revista>
                 <Seccion_revista numero_paginas_seccion="20">
                     <Contenido_revista enlace_revista="Www.Informaticate/seccion1.com">
@@ -65,11 +71,12 @@
                     </Contenido_periodico>
                 </Seccion_periodico>
             </Secciones_periodico>
-            <Indice_periodico> Los goles de la semana   ..... 2
-            Mejores jugadas  ....... 10
-            Entrevista a Courtois ...... 20
-            Mundo economico ......25 
-            Economia global .......35
+            <Indice_periodico> 
+                Los goles de la semana   ..... 2
+                Mejores jugadas  ....... 10
+                Entrevista a Courtois ...... 20
+                Mundo economico ......25 
+                Economia global .......35
             </Indice_periodico>
         </Periodico>
     </Periodicos>

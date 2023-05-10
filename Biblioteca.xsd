@@ -26,9 +26,7 @@
                                                         minOccurs="1" maxOccurs="1">
                                                         <simpleType>
                                                             <restriction base="string">
-                                                                <!-- La sinopsis debe de tener una
-                                                                longitud entre
-                                                    20 y 500 caracteres -->
+                                                                <!-- La sinopsis debe de tener una longitud entre 20 y 500 caracteres -->
                                                                 <minLength value="20" />
                                                                 <maxLength value="500" />
                                                             </restriction>
@@ -44,8 +42,7 @@
                                                                 use="required">
                                                                 <simpleType>
                                                                     <restriction base="string">
-                                                                        <!-- Tiene que empezar por
-                                                                        www/WWW/Www y seguir con un punto y luego letras-->
+                                                                        <!-- Tiene que empezar por www/WWW/Www y seguir con un punto y luego letras-->
                                                                         <pattern
                                                                             value="[WWW,www,Www]+\..+[A-Za-z]+"></pattern>
                                                                     </restriction>
@@ -57,8 +54,7 @@
                                                 <attribute name="numero_paginas_cap" use="required">
                                                     <simpleType>
                                                         <restriction base="integer">
-                                                            <!-- Tiene que ser un numero comprendido
-                                                        entre el 10 y el 99998 -->
+                                                            <!-- Tiene que ser un numero comprendido entre el 10 y el 99998 -->
                                                             <minInclusive value="2"></minInclusive>
                                                             <maxExclusive value="99999"></maxExclusive>
                                                         </restriction>
@@ -70,8 +66,7 @@
                                     <attribute name="Id" use="required">
                                         <simpleType>
                                             <restriction base="string">
-                                                <!-- Tiene que empezar siempre por L seguido de 4
-                                                digitos -->
+                                                <!-- Tiene que empezar siempre por L seguido de 4 digitos -->
                                                 <pattern value="L[0-9]{4}"></pattern>
                                             </restriction>
                                         </simpleType>
@@ -79,8 +74,7 @@
                                     <attribute name="tipo_clase_libro" use="required">
                                         <simpleType>
                                             <restriction base="string">
-                                                <!-- Tiene que ser del tipo novela, infantil o
-                                                didáctico -->
+                                                <!-- Tiene que ser del tipo novela, infantil o didáctico -->
                                                 <enumeration value="novela"></enumeration>
                                                 <enumeration value="infantil"></enumeration>
                                                 <enumeration value="didactico"></enumeration>
@@ -90,8 +84,7 @@
                                     <attribute name="numero_paginas_libro" use="required">
                                         <simpleType>
                                             <restriction base="integer">
-                                                <!-- Tiene que ser un numero comprendido entre el 10
-                                                y el 99999 -->
+                                                <!-- Tiene que ser un numero comprendido entre el 10 y el 99999 -->
                                                 <minInclusive value="10"></minInclusive>
                                                 <maxInclusive value="99999"></maxInclusive>
                                             </restriction>
@@ -114,9 +107,7 @@
                                         <element name="Numero_de_revista">
                                             <simpleType>
                                                 <restriction base="integer">
-                                                    <!-- Tiene que ser un numero comprendido entre
-                                                    el 1 y el
-                                        999999 -->
+                                                    <!-- Tiene que ser un numero comprendido entre el 1 y el 999999 -->
                                                     <minInclusive value="1"></minInclusive>
                                                     <maxInclusive value="999999"></maxInclusive>
                                                 </restriction>
@@ -142,9 +133,7 @@
                                                                             <simpleType>
                                                                                 <restriction
                                                                                     base="string">
-                                                                                    <!-- Tiene que
-                                                                                    empezar por
-                                                                        www/WWW/Www y seguir con un punto y luego letras-->
+                                                                                    <!-- Tiene que empezar por www/WWW/Www y seguir con un punto y luego letras-->
                                                                                     <pattern
                                                                                         value="[WWW,www,Www]+\..+[A-Za-z]+"></pattern>
                                                                                 </restriction>
@@ -157,9 +146,7 @@
                                                                 use="required">
                                                                 <simpleType>
                                                                     <restriction base="integer">
-                                                                        <!-- Minimo de páginas
-                                                                        permitido 2,
-                                                            máximo de 20 -->
+                                                                        <!-- Minimo de páginas permitido 2, máximo de 20 -->
                                                                         <minInclusive value="2"></minInclusive>
                                                                         <maxInclusive value="20"></maxInclusive>
                                                                     </restriction>
@@ -174,8 +161,7 @@
                                     <attribute name="Id" use="required">
                                         <simpleType>
                                             <restriction base="string">
-                                                <!-- Tiene que empezar siempre por R seguido de 4
-                                                digitos -->
+                                                <!-- Tiene que empezar siempre por R seguido de 4 digitos -->
                                                 <pattern value="R[0-9]{4}"></pattern>
                                             </restriction>
                                         </simpleType>
@@ -183,9 +169,7 @@
                                     <attribute name="tipo_clase" use="required">
                                         <simpleType>
                                             <restriction base="string">
-                                                <!-- Tiene que ser del tipo (informática, corazón,
-                                                coches,
-                                    investigación u otras) -->
+                                                <!-- Tiene que ser del tipo (informática, corazón, coches, investigación u otras) -->
                                                 <enumeration value="informatica"></enumeration>
                                                 <enumeration value="corazon"></enumeration>
                                                 <enumeration value="coches"></enumeration>
@@ -197,8 +181,7 @@
                                     <attribute name="numero_paginas_revista" use="required">
                                         <simpleType>
                                             <restriction base="integer">
-                                                <!-- Tiene que tener un mínimo de 10 páginas y un
-                                                máximo de 70 -->
+                                                <!-- Tiene que tener un mínimo de 10 páginas y un máximo de 70 -->
                                                 <minInclusive value="10"></minInclusive>
                                                 <maxInclusive value="70"></maxInclusive>
                                             </restriction>
@@ -232,11 +215,7 @@
                                                                             <simpleType>
                                                                                 <restriction
                                                                                     base="string">
-                                                                                    <!-- Nombre de
-                                                                                    autor con
-                                                                                    longitud mínima
-                                                                                    de 3 y máxima de
-                                                                                    35 -->
+                                                                                    <!-- Nombre de autor con longitud mínima de 3 y máxima de 35 -->
                                                                                     <minLength
                                                                                         value="3"></minLength>
                                                                                     <maxLength
@@ -264,9 +243,7 @@
                                                                             <simpleType>
                                                                                 <restriction
                                                                                     base="string">
-                                                                                    <!-- Tiene que
-                                                                                    empezar por
-                                                                        www/WWW/Www y seguir con un punto y luego letras-->
+                                                                                    <!-- Tiene que empezar por www/WWW/Www y seguir con un punto y luego letras -->
                                                                                     <pattern
                                                                                         value="[WWW,www,Www]+\..+[A-Za-z]+"></pattern>
                                                                                 </restriction>
@@ -279,10 +256,7 @@
                                                                 use="required">
                                                                 <simpleType>
                                                                     <restriction base="string">
-                                                                        <!-- Tiene que ser del tipo
-                                                                        económica, opinión,
-                                                                        deportes, nacional o
-                                                                        internacional -->
+                                                                        <!-- Tiene que ser del tipo económica, opinión, deportes, nacional o internacional -->
                                                                         <enumeration
                                                                             value="economica"></enumeration>
                                                                         <enumeration value="opinion"></enumeration>
@@ -306,8 +280,7 @@
                                     <attribute name="Id" use="required">
                                         <simpleType>
                                             <restriction base="string">
-                                                <!-- Tiene que empezar siempre por P seguido de 4
-                                                digitos -->
+                                                <!-- Tiene que empezar siempre por P seguido de 4 digitos -->
                                                 <pattern value="P[0-9]{4}"></pattern>
                                             </restriction>
                                         </simpleType>
@@ -326,14 +299,10 @@
                                     </attribute>
                                 </complexType>
                             </element>
-
                         </sequence>
-
                     </complexType>
                 </element>
-
             </sequence>
-
         </complexType>
     </element>
 </schema>
