@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE Biblioteca SYSTEM "Biblioteca.dtd">
-<Biblioteca>
+
+<Biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="Biblioteca.xsd">
+
     <Libros>
         <libro id="L0001" tipo_clase="novela" numero_paginas="1000">
             <titulo>Novela muy triste</titulo>
@@ -48,11 +50,11 @@
     </Libros>
 
 <Periodicos>
-    <periodico id="P0001" tipo_clase="nacional" fecha_publicacion="01/01/2023">
+    <periodico id="P0001" tipo_clase="nacional" fecha_publicacion="2023-03-23">
         <indice>Aqui iria el indice</indice>
         <secciones>
              <Pseccion tipo_seccion="economia"></Pseccion>
-             <articulo autor="Lola">aqui iria el articulo</articulo>
+             <articulo autor="Lola"></articulo>
              <contenido enlace_informacion="www.google.es"></contenido>
         </secciones>
         <secciones>
@@ -62,26 +64,26 @@
         </secciones>
         <secciones>
              <Pseccion tipo_seccion="deportes"></Pseccion>
-             <articulo autor="Manolo">aqui iria el articulo</articulo>
+             <articulo autor="Manolo"></articulo>
              <contenido enlace_informacion="www.google.es"></contenido>
         </secciones>
         <secciones>
              <Pseccion tipo_seccion="nacional"></Pseccion>
-             <articulo autor="Jacinto">aqui iria el articulo</articulo>
+             <articulo autor="Jacinto"></articulo>
              <contenido enlace_informacion="www.google.es"></contenido>
         </secciones>
         <secciones>
              <Pseccion tipo_seccion="internacional"></Pseccion>
-             <articulo autor="Bonifacio">aqui iria el articulo</articulo>
+             <articulo autor="Bonifacio"></articulo>
              <contenido enlace_informacion="www.google.es"></contenido>
         </secciones>
     </periodico>
     
-    <periodico id="P0002" tipo_clase="internacional" fecha_publicacion="01/02/2023">
+    <periodico id="P0002" tipo_clase="internacional" fecha_publicacion="2023-04-02">
     <indice>Aqui iria el indice</indice>
         <secciones>
              <Pseccion tipo_seccion="economia"></Pseccion>
-             <articulo autor="Jessica">aqui iria el articulo</articulo>
+             <articulo autor="Jessica"></articulo>
              <contenido enlace_informacion="www.google.es"></contenido>
         </secciones>
         <secciones>
@@ -91,17 +93,17 @@
         </secciones>
         <secciones>
              <Pseccion tipo_seccion="deportes"></Pseccion>
-             <articulo autor="Mark">aqui iria el articulo</articulo>
+             <articulo autor="Mark"></articulo>
              <contenido enlace_informacion="www.google.es"></contenido>
         </secciones>
         <secciones>
              <Pseccion tipo_seccion="nacional"></Pseccion>
-             <articulo autor="John">aqui iria el articulo</articulo>
+             <articulo autor="John"></articulo>
              <contenido enlace_informacion="www.google.es"></contenido>
         </secciones>
         <secciones>
              <Pseccion tipo_seccion="internacional"></Pseccion>
-             <articulo autor="Peter">aqui iria el articulo</articulo>
+             <articulo autor="Peter"></articulo>
              <contenido enlace_informacion="www.google.es"></contenido>
         </secciones>
     
@@ -110,7 +112,7 @@
 </Periodicos>
 
 <Revistas>
-    <revista id="R0001" tipo_clase="informatica" numero_paginas="50">
+    <revista id="R0011" tipo_clase="informatica" numero_paginas="50">
         <titulo>Pecés en el hardware</titulo>
         <numero_revista>1</numero_revista>
         <indice>Aqui iria el indice</indice>
@@ -125,7 +127,7 @@
         </secciones_revista>
     </revista>
 
-     <revista id="R" tipo_clase="corazon" numero_paginas="20">
+     <revista id="R0012" tipo_clase="corazon" numero_paginas="20">
         <titulo>Aorta</titulo>
         <numero_revista>3</numero_revista>
         <indice>Aqui iria el indice</indice>
@@ -140,7 +142,7 @@
         </secciones_revista>
     </revista>
 
-    <revista id="R0002" tipo_clase="coches" numero_paginas="60">
+    <revista id="R0013" tipo_clase="coches" numero_paginas="60">
         <titulo>Gas Race</titulo>
         <numero_revista>1</numero_revista>
         <indice>Aqui iria el indice</indice>
@@ -155,7 +157,7 @@
         </secciones_revista>
     </revista>
 
-    <revista id="R0003" tipo_clase="investigacion" numero_paginas="75">
+    <revista id="R0014" tipo_clase="investigacion" numero_paginas="75">
         <titulo>Pecés en el hardware</titulo>
         <numero_revista>4</numero_revista>
         <indice>Aqui iria el indice</indice>
@@ -170,7 +172,7 @@
         </secciones_revista>
     </revista>
 
-    <revista id="R0004" tipo_clase="otras" numero_paginas="25">
+    <revista id="R0015" tipo_clase="otras" numero_paginas="25">
         <titulo>Unas y Otras</titulo>
         <numero_revista>6</numero_revista>
         <indice>Aqui iria el indice</indice>
