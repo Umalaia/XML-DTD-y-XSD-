@@ -168,27 +168,33 @@
 
     <Periodicos>
         <Periodico id_pr="P1993" tipo_clase_pr="Nacional" fecha_publicacion_pr="17/07/2023">
-            <Indice_pr></Indice_pr>
+            <Indice_pr>
+                Supereconomia  ..... 2
+                Opiniones varias  ....... 20
+                Entrevista a Courtois ...... 40
+                Elecciones nacionales ......65 
+                Eurovision .......35
+            </Indice_pr>
             <Secciones_pr>
                 <Seccion_pr tipo_seccion_pr="Economia">
                     <Articulo_pr autor="Pepe"></Articulo_pr>
-                    <Contenido_pr enlace_pr=""></Contenido_pr>
+                    <Contenido_pr enlace_pr="www.economia.com"></Contenido_pr>
                 </Seccion_pr>
                 <Seccion_pr tipo_seccion_pr="Opinion">
-                    <Articulo_pr autor="Popo"></Articulo_pr>
-                    <Contenido_pr enlace_pr=""></Contenido_pr>
+                    <Articulo_pr autor="Juan"></Articulo_pr>
+                    <Contenido_pr enlace_pr="www.opinion.com"></Contenido_pr>
                 </Seccion_pr>
                 <Seccion_pr tipo_seccion_pr="Deportes">
-                    <Articulo_pr autor="Pipi"></Articulo_pr>
-                    <Contenido_pr enlace_pr=""></Contenido_pr>
+                    <Articulo_pr autor="Pili"></Articulo_pr>
+                    <Contenido_pr enlace_pr="www.deportes.com"></Contenido_pr>
                 </Seccion_pr>
                 <Seccion_pr tipo_seccion_pr="Nacional">
-                    <Articulo_pr autor="Pepe"></Articulo_pr>
-                    <Contenido_pr enlace_pr=""></Contenido_pr>
+                    <Articulo_pr autor="Manolo"></Articulo_pr>
+                    <Contenido_pr enlace_pr="www.nacional.com"></Contenido_pr>
                 </Seccion_pr>
                 <Seccion_pr tipo_seccion_pr="Internacional">
-                    <Articulo_pr autor="Pipi"></Articulo_pr>
-                    <Contenido_pr enlace_pr=""></Contenido_pr>
+                    <Articulo_pr autor="Esther"></Articulo_pr>
+                    <Contenido_pr enlace_pr="www.internacional.com"></Contenido_pr>
                 </Seccion_pr>
             </Secciones_pr>
         </Periodico>

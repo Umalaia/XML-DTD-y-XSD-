@@ -6,31 +6,55 @@
                 <xs:element name="Libros">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="Libro" minOccurs="0" maxOccurs="unbounded">
                             <!-- Pongo minOccurs a 0 ya que considero que puede haber o no libros registrados
                             igual que más adelante lo pondré en revistas y periodicos -->
+                            <xs:element name="Libro" minOccurs="0" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="Titulo_lbr" type="xs:string"></xs:element>
                                         <xs:element name="Indice_lbr" type="xs:string"></xs:element>
-                                        <xs:element name="Sinopsis_lbr" type="xs:string"></xs:element>
+                                        <xs:element name="Sinopsis_lbr">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <!-- La sinopsis debe de tener una longitud entre 20 y 2500 caracteres -->
+                                                    <xs:minLength value="20" />
+                                                    <xs:maxLength value="2500" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
                                         <xs:element name="Capitulo_lbr" minOccurs="1" maxOccurs="unbounded">
                                             <xs:complexType>
                                                 <xs:sequence>
                                                     <xs:element name="Titulo_capitulo" type="xs:string"></xs:element>
                                                     <xs:element name="Contenido_capitulo">
                                                         <xs:complexType>
-                                                            <xs:attribute name="enlace_lbr"></xs:attribute>
+                                                            <xs:attribute name="enlace_lbr">
+                                                             <xs:simpleType>
+                                                                    <xs:restriction base="xs:string">
+                                                                        <!-- Tiene que empezar por www/WWW/Www y seguir con un punto y luego letras-->
+                                                                        <xs:pattern value="[WWW,www,Www]+\..+[A-Za-z]+"></xs:pattern>
+                                                                    </xs:restriction>
+                                                                </xs:simpleType>
+                                                            </xs:attribute>
                                                         </xs:complexType>
                                                     </xs:element>
                                                 </xs:sequence>
-                                                <xs:attribute name="num_paginas_cap" type="xs:integer"></xs:attribute>
+                                                <xs:attribute name="num_paginas_cap">
+                                                    <xs:simpleType>
+                                                        <xs:restriction base="xs:integer">
+                                                            <!-- Tiene que ser un numero comprendido entre el 10 y el 99998 -->
+                                                            <xs:minInclusive value="10"></xs:minInclusive>
+                                                            <xs:maxExclusive value="99999"></xs:maxExclusive>
+                                                        </xs:restriction>
+                                                    </xs:simpleType>
+                                                </xs:attribute>
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>
                                     <xs:attribute name="id_lbr" use="required">
                                         <xs:simpleType>
                                             <xs:restriction base="xs:string">
+                                                 <!-- Tiene que empezar siempre por L seguido de 4 digitos -->
                                                 <xs:pattern value="L\d\d\d\d"></xs:pattern>
                                             </xs:restriction>
                                         </xs:simpleType>
@@ -38,13 +62,22 @@
                                     <xs:attribute name="tipo_clase_lbr" use="required">
                                         <xs:simpleType>    
                                             <xs:restriction base="xs:string">
+                                                <!-- Tiene que ser del tipo novela, infantil o didáctico -->
                                                 <xs:enumeration value="Novela"></xs:enumeration>
                                                 <xs:enumeration value="Infantil"></xs:enumeration>
                                                 <xs:enumeration value="Didactico"></xs:enumeration>
                                             </xs:restriction>
                                         </xs:simpleType>
                                     </xs:attribute>
-                                    <xs:attribute name="num_paginas_lbr" type="xs:integer" use="required"></xs:attribute>
+                                    <xs:attribute name="num_paginas_lbr" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:integer">
+                                                <!-- Tiene que ser un numero comprendido entre el 10 y el 99998 -->
+                                                <xs:minInclusive value="10"></xs:minInclusive>
+                                                <xs:maxExclusive value="99999"></xs:maxExclusive>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
@@ -57,7 +90,14 @@
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="Titulo_rv" type="xs:string"></xs:element>
-                                        <xs:element name="Numero_publicacion_rv" type="xs:integer"></xs:element>
+                                        <xs:element name="Numero_publicacion_rv">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <!-- Tiene que ser un numero superior a 1 -->
+                                                    <xs:minInclusive value="1"></xs:minInclusive>
+                                                </xs:restriction>
+                                        </xs:simpleType>
+                                        </xs:element>
                                         <xs:element name="Indice_contenido_rv" type="xs:string"></xs:element>
                                         <xs:element name="Secciones_rv">
                                             <xs:complexType>
@@ -67,11 +107,26 @@
                                                             <xs:sequence>
                                                                 <xs:element name="Contenido_rv">
                                                                     <xs:complexType>
-                                                                        <xs:attribute name="enlace_rv"></xs:attribute>
+                                                                        <xs:attribute name="enlace_rv">
+                                                                            <xs:simpleType>
+                                                                                <xs:restriction base="xs:string">
+                                                                                    <!-- Tiene que empezar por www/WWW/Www y seguir con un punto y luego letras-->
+                                                                                    <xs:pattern value="[WWW,www,Www]+\..+[A-Za-z]+"></xs:pattern>
+                                                                                </xs:restriction>
+                                                                            </xs:simpleType>
+                                                                        </xs:attribute>
                                                                     </xs:complexType>
                                                                 </xs:element>
                                                             </xs:sequence>
-                                                            <xs:attribute name="num_paginas_seccion" type="xs:integer"></xs:attribute>
+                                                            <xs:attribute name="num_paginas_seccion">
+                                                                <xs:simpleType>
+                                                                    <xs:restriction base="xs:integer">
+                                                                        <!-- Tiene que ser un numero comprendido entre el 2 y el 99998 -->
+                                                                        <xs:minInclusive value="2"></xs:minInclusive>
+                                                                        <xs:maxExclusive value="99999"></xs:maxExclusive>
+                                                                    </xs:restriction>
+                                                                </xs:simpleType>
+                                                            </xs:attribute>
                                                         </xs:complexType>
                                                     </xs:element>
                                                 </xs:sequence>
@@ -81,6 +136,7 @@
                                     <xs:attribute name="id_rv" use="required">
                                         <xs:simpleType>
                                             <xs:restriction base="xs:string">
+                                                <!-- Tiene que empezar siempre por R seguido de 4 digitos -->
                                                 <xs:pattern value="R\d\d\d\d"></xs:pattern>
                                             </xs:restriction>
                                         </xs:simpleType>
@@ -88,6 +144,7 @@
                                     <xs:attribute name="tipo_clase_rv">
                                         <xs:simpleType>    
                                             <xs:restriction base="xs:string">
+                                                <!-- Tiene que ser del tipo (informática, corazón, coches, investigación u otras) -->
                                                 <xs:enumeration value="Informatica"></xs:enumeration>
                                                 <xs:enumeration value="Corazon"></xs:enumeration>
                                                 <xs:enumeration value="Coches"></xs:enumeration>
@@ -96,7 +153,15 @@
                                             </xs:restriction>
                                         </xs:simpleType>
                                     </xs:attribute>
-                                    <xs:attribute name="num_paginas_rv" type="xs:integer"></xs:attribute>
+                                    <xs:attribute name="num_paginas_rv">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:integer">
+                                                <!-- Tiene que ser un numero comprendido entre el 10 y el 99998 -->
+                                                <xs:minInclusive value="10"></xs:minInclusive>
+                                                <xs:maxExclusive value="99999"></xs:maxExclusive>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
@@ -122,13 +187,21 @@
                                                                 </xs:element>
                                                                 <xs:element name="Contenido_pr">
                                                                     <xs:complexType>
-                                                                        <xs:attribute name="enlace_pr"></xs:attribute>
+                                                                        <xs:attribute name="enlace_pr">
+                                                                            <xs:simpleType>
+                                                                                <xs:restriction base="xs:string">
+                                                                                    <!-- Tiene que empezar por www/WWW/Www y seguir con un punto y luego letras-->
+                                                                                    <xs:pattern value="[WWW,www,Www]+\..+[A-Za-z]+"></xs:pattern>
+                                                                                </xs:restriction>
+                                                                            </xs:simpleType>
+                                                                        </xs:attribute>
                                                                     </xs:complexType>
                                                                 </xs:element>
                                                             </xs:sequence>
                                                             <xs:attribute name="tipo_seccion_pr" >
                                                                 <xs:simpleType>    
                                                                     <xs:restriction base="xs:string">
+                                                                        <!-- Tiene que ser del tipo economica, opinion, deportes, nacional o internacional -->
                                                                         <xs:enumeration value="Economia"></xs:enumeration>
                                                                         <xs:enumeration value="Opinion"></xs:enumeration>
                                                                         <xs:enumeration value="Deportes"></xs:enumeration>
@@ -146,6 +219,7 @@
                                     <xs:attribute name="id_pr" use="required">
                                         <xs:simpleType>
                                             <xs:restriction base="xs:string">
+                                                <!-- Tiene que empezar siempre por P seguido de 4 digitos -->
                                                 <xs:pattern value="P\d\d\d\d"></xs:pattern>
                                             </xs:restriction>
                                         </xs:simpleType>
@@ -153,6 +227,7 @@
                                     <xs:attribute name="tipo_clase_pr" >
                                         <xs:simpleType>    
                                             <xs:restriction base="xs:string">
+                                                <!-- La clase tiene que ser internacional o nacional -->
                                                 <xs:enumeration value="Nacional"></xs:enumeration>
                                                 <xs:enumeration value="Internacional"></xs:enumeration>
                                             </xs:restriction>

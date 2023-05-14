@@ -38,13 +38,13 @@
                 permitirán cumplir su destino. Pues, aunque no lo parezca a primera vista, 
                 Harry no es un chico común y corriente: ¡es un verdadero mago!
             </Sinopsis_lbr>
-            <Capitulo_lbr num_paginas_cap="12">
+            <Capitulo_lbr num_paginas_cap="10">
                 <Titulo_capitulo>El niño que sobrevivió</Titulo_capitulo>
-                <Contenido_capitulo enlace_lbr="https://www.amazon.es/Harry-Potter-Piedra-Filosofal-Colecci%C3%B3n/dp/8498386314/ref=tmm_pap_swatch_0?_encoding=UTF8"></Contenido_capitulo>
+                <Contenido_capitulo enlace_lbr="www.amazon.es/HarryPotter"></Contenido_capitulo>
             </Capitulo_lbr>
-            <Capitulo_lbr num_paginas_cap="11">
+            <Capitulo_lbr num_paginas_cap="158">
                 <Titulo_capitulo>El vidrio que se desvaneció</Titulo_capitulo>
-                <Contenido_capitulo enlace_lbr="https://www.amazon.es/Harry-Potter-Piedra-Filosofal-Colecci%C3%B3n/dp/8498386314/ref=tmm_pap_swatch_0?_encoding=UTF8"></Contenido_capitulo>
+                <Contenido_capitulo enlace_lbr="www.amazon.es/Harry-Potter-Piedra-Filosofal"></Contenido_capitulo>
             </Capitulo_lbr>
         </Libro>
         
@@ -62,9 +62,9 @@
                 aparece la bruja Elviruja... ¡Kika y su hermano van a pasar la tarde más 
                 emocionante de sus vidas!
             </Sinopsis_lbr>
-            <Capitulo_lbr num_paginas_cap="3">
+            <Capitulo_lbr num_paginas_cap="10">
                 <Titulo_capitulo>De camino al cole</Titulo_capitulo>
-                <Contenido_capitulo enlace_lbr="https://www.amazon.es/Kika-embruja-los-deberes-Castellano/dp/8421644017"></Contenido_capitulo>
+                <Contenido_capitulo enlace_lbr="www.amazon.es/Kika-embruja-los-deberes"></Contenido_capitulo>
             </Capitulo_lbr>
         </Libro>
         
@@ -142,7 +142,7 @@
             </Sinopsis_lbr>
             <Capitulo_lbr num_paginas_cap="15">
                 <Titulo_capitulo>Capitulo 1: Introduccion</Titulo_capitulo>
-                <Contenido_capitulo enlace_lbr="https://www.amazon.es/Git-GitHub-desde-cero-te%C3%B3rico-pr%C3%A1ctica/dp/B0C1J3FG6Q"></Contenido_capitulo>
+                <Contenido_capitulo enlace_lbr="www.amazon.es/Git-GitHub-desde-cero"></Contenido_capitulo>
             </Capitulo_lbr>
         </Libro>
     </Libros>
@@ -160,7 +160,7 @@
             </Indice_contenido_rv>
             <Secciones_rv>
                 <Seccion_rv num_paginas_seccion="5">
-                    <Contenido_rv enlace_rv="https://www.debitenbit.es"></Contenido_rv>
+                    <Contenido_rv enlace_rv="www.debitenbit.es"></Contenido_rv>
                 </Seccion_rv>
             </Secciones_rv>
         </Revista>
@@ -168,27 +168,33 @@
 
     <Periodicos>
         <Periodico id_pr="P1993" tipo_clase_pr="Nacional" fecha_publicacion_pr="2023-07-17">
-            <Indice_pr></Indice_pr>
+            <Indice_pr>
+                Supereconomia  ..... 2
+                Opiniones varias  ....... 20
+                Entrevista a Courtois ...... 40
+                Elecciones nacionales ......65 
+                Eurovision .......35
+            </Indice_pr>
             <Secciones_pr>
                 <Seccion_pr tipo_seccion_pr="Economia">
                     <Articulo_pr autor="Pepe"></Articulo_pr>
-                    <Contenido_pr enlace_pr=""></Contenido_pr>
+                    <Contenido_pr enlace_pr="www.economia.com"></Contenido_pr>
                 </Seccion_pr>
                 <Seccion_pr tipo_seccion_pr="Opinion">
-                    <Articulo_pr autor="Popo"></Articulo_pr>
-                    <Contenido_pr enlace_pr=""></Contenido_pr>
+                    <Articulo_pr autor="Juan"></Articulo_pr>
+                    <Contenido_pr enlace_pr="www.opinion.com"></Contenido_pr>
                 </Seccion_pr>
                 <Seccion_pr tipo_seccion_pr="Deportes">
-                    <Articulo_pr autor="Pipi"></Articulo_pr>
-                    <Contenido_pr enlace_pr=""></Contenido_pr>
+                    <Articulo_pr autor="Pili"></Articulo_pr>
+                    <Contenido_pr enlace_pr="www.deportes.com"></Contenido_pr>
                 </Seccion_pr>
                 <Seccion_pr tipo_seccion_pr="Nacional">
-                    <Articulo_pr autor="Pepe"></Articulo_pr>
-                    <Contenido_pr enlace_pr=""></Contenido_pr>
+                    <Articulo_pr autor="Manolo"></Articulo_pr>
+                    <Contenido_pr enlace_pr="www.nacional.com"></Contenido_pr>
                 </Seccion_pr>
                 <Seccion_pr tipo_seccion_pr="Internacional">
-                    <Articulo_pr autor="Pipi"></Articulo_pr>
-                    <Contenido_pr enlace_pr=""></Contenido_pr>
+                    <Articulo_pr autor="Esther"></Articulo_pr>
+                    <Contenido_pr enlace_pr="www.internacional.com"></Contenido_pr>
                 </Seccion_pr>
             </Secciones_pr>
         </Periodico>
