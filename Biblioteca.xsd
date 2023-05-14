@@ -54,7 +54,7 @@
                                                 <attribute name="numero_paginas_cap" use="required">
                                                     <simpleType>
                                                         <restriction base="integer">
-                                                            <!-- Tiene que ser un numero comprendido entre el 10 y el 99998 -->
+                                                            <!-- Tiene que ser un numero comprendido entre el 2 y el 99998 -->
                                                             <minInclusive value="2"></minInclusive>
                                                             <maxExclusive value="99999"></maxExclusive>
                                                         </restriction>
