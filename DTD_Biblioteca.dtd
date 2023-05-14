@@ -12,7 +12,7 @@
 <!ELEMENT Contenido_capitulo (#PCDATA)>
 
 <!ATTLIST Libro
-    id_lbr CDATA #REQUIRED
+    id_lbr ID #REQUIRED
     tipo_clase_lbr (Novela | Infantil | Didactico) #REQUIRED
     num_paginas_lbr CDATA #IMPLIED
 >
@@ -35,7 +35,7 @@
 <!ELEMENT Contenido_rv (#PCDATA)>
 
 <!ATTLIST Revista
-    id_rv CDATA #REQUIRED
+    id_rv ID #REQUIRED
     tipo_clase_rv (Informatica | Corazon | Coches | Investigacion | Otras) #REQUIRED
     num_paginas_rv CDATA #REQUIRED
 > 
@@ -57,7 +57,7 @@
 <!ELEMENT Contenido_pr (#PCDATA)>
 
 <!ATTLIST Periodico
-    id_pr CDATA #REQUIRED
+    id_pr ID #REQUIRED
     tipo_clase_pr (Nacional | Internacional) #REQUIRED
     fecha_publicacion_pr CDATA #REQUIRED
 >
