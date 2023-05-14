@@ -125,7 +125,7 @@
         </secciones_revista>
     </revista>
 
-     <revista id="R" tipo_clase="corazon" numero_paginas="20">
+     <revista id="R0005" tipo_clase="corazon" numero_paginas="20">
         <titulo>Aorta</titulo>
         <numero_revista>3</numero_revista>
         <indice>Aqui iria el indice</indice>
